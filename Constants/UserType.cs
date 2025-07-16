@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SealBank.Models
+namespace SealBank.Constants
 {
-    public class Transaction
+    public enum UserType
     {
-
+        User,
+        PremiumUser,
+        BusinessUser
     }
 }

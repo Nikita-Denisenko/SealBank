@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SealBank.Models
+namespace SealBank.Logic
 {
-    public class Transaction
+    public static class Validator
     {
 
     }

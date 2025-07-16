@@ -1,12 +1,13 @@
-﻿using System;
+﻿using SealBank.Constants;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SealBank.Models
+namespace SealBank.Models.Users
 {
-    internal abstract class UserBase
+    public abstract class UserBase
         (
             int id,
             string name,
@@ -14,7 +15,8 @@ namespace SealBank.Models
             DateTime birthDay,
             string email,
             string password,
-            string phoneNumber
+            string phoneNumber,
+            UserType userType
         )
     {
         public int Id { get; } = id;
@@ -26,5 +28,6 @@ namespace SealBank.Models
         public string PhoneNumber { get; private set; } = phoneNumber;
         public decimal Balance { get; private set; } = 0;
         public List<Transaction> History { get; private set; } = [];
+        public UserType UserType { get; private set; } = userType;
     }
 }

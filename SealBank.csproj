@@ -8,10 +8,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Logic\" />
-    <Folder Include="UI\" />
-    <Folder Include="Resources\" />
-  </ItemGroup>
-
 </Project>

@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SealBank.Models
+namespace SealBank.Data
 {
-    public class Transaction
+    public class UserService
     {
-
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SealBank.Interfaces
 {
-    internal interface IBonusReceivable
+    public interface IBonusReceivable
     {
         public void AddSealBonus(int amount);
     }

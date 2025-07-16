@@ -1,4 +1,6 @@
-﻿using SealBank.Interfaces;
+﻿using SealBank.Constants;
+using SealBank.Interfaces;
+using SealBank.Models.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SealBank.Models
 {
-    internal class BusinessUser
+    public class BusinessUser
     (
         int id,
         string name,
@@ -15,8 +17,9 @@ namespace SealBank.Models
         DateTime birthDay,
         string email,
         string password,
-        string phoneNumber
-    ) : UserBase(id, name, gender, birthDay, email, password, phoneNumber),
+        string phoneNumber,
+        UserType userType
+    ) : UserBase(id, name, gender, birthDay, email, password, phoneNumber, userType),
         ITransferable
 
     {
