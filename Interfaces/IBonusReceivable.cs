@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SealBank.Constants;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,10 @@ namespace SealBank.Interfaces
 {
     public interface IBonusReceivable
     {
+        public List<SpendingCategory> SpendingCategories { get; }
+        public int BasicBonusPercent { get; }
+        public int Seals { get; }
         public void AddSealBonus(int amount);
+        public List<SpendingCategory> ChooseCategories();
     }
 }

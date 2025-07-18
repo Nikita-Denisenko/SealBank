@@ -23,16 +23,23 @@ namespace SealBank.Models.Users
         IBonusReceivable
 
     {
+        public List<SpendingCategory> SpendingCategories { get; private set; } = [];
+        public int BasicBonusPercent { get; } = 2;
         public int Seals { get; private set; } = 0;
 
-        public Transaction Transfer(UserBase addressee, decimal amount)
+        public List<SpendingCategory> ChooseCategories()
         {
-            return new Transaction();
+            return new List<SpendingCategory>();
         }
 
         public void AddSealBonus(int amount)
         {
             Seals += amount;
+        }
+
+        public Transaction Transfer(UserBase addressee, decimal amount)
+        {
+            return new Transaction();
         }
     }
 }
