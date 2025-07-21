@@ -1,4 +1,4 @@
-﻿using SealBank.Models;
+﻿using SealBank.Models.Transactions;
 using SealBank.Models.Users;
 using System;
 using System.Collections.Generic;
@@ -10,6 +10,6 @@ namespace SealBank.Interfaces
 {
     public interface ITransferable
     {
-        public Transaction Transfer(UserBase addressee, decimal amount);
+        public TransactionBase Transfer(UserBase addressee, decimal amount);
     }
 }

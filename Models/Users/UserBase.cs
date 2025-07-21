@@ -1,4 +1,5 @@
 ﻿using SealBank.Constants;
+using SealBank.Models.Transactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +28,7 @@ namespace SealBank.Models.Users
         public DateTime BirthDay { get; } = birthDay;
         public string PhoneNumber { get; private set; } = phoneNumber;
         public decimal Balance { get; private set; } = 0;
-        public List<Transaction> History { get; private set; } = [];
+        public List<TransactionBase> History { get; private set; } = [];
         public UserType UserType { get; private set; } = userType;
     }
 }

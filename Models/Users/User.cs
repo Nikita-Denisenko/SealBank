@@ -1,5 +1,6 @@
 ﻿using SealBank.Constants;
 using SealBank.Interfaces;
+using SealBank.Models.Transactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,9 +38,9 @@ namespace SealBank.Models.Users
             Seals += amount;
         }
 
-        public Transaction Transfer(UserBase addressee, decimal amount)
+        public TransactionBase Transfer(UserBase addressee, decimal amount)
         {
-            return new Transaction();
+            return new TransactionBase();
         }
     }
 }
