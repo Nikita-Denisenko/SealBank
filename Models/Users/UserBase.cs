@@ -30,5 +30,23 @@ namespace SealBank.Models.Users
         public decimal Balance { get; private set; } = 0;
         public List<TransactionBase> History { get; private set; } = [];
         public UserType UserType { get; private set; } = userType;
+
+        public void GiveMoney(decimal amount)
+        {
+            Balance += amount;
+        }
+
+        public bool WithdrawMoney(decimal amount)
+        {
+            if (Balance < amount) return false;
+
+            Balance -= amount;
+
+            return true;
+        }
+
+        public void ChangeEmail(string newEmail) => Email = newEmail;
+        public void ChangePassword(string newPassword) => Password = newPassword;
+ 
     }
 }

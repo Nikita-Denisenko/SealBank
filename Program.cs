@@ -1,3 +1,5 @@
+using SealBank.UI;
+
 namespace SealBank;
 
 static class Program
@@ -6,6 +8,6 @@ static class Program
     static void Main()
     {
         ApplicationConfiguration.Initialize();
-        Application.Run(new Form1());
-    }    
+        Application.Run(new LoginForm());
+    }
 }

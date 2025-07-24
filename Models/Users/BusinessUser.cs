@@ -26,7 +26,7 @@ namespace SealBank.Models
     {
         public TransactionBase Transfer(UserBase addressee, decimal amount)
         {
-            return new TransactionBase();
+            throw new NotImplementedException();
         }
     }
 }
