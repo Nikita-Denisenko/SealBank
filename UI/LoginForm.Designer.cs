@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             HelloText = new Label();
-            NameTextBox = new TextBox();
+            EmailTextBox = new TextBox();
             NameLabel = new Label();
-            LoginLabel = new Label();
+            EmailLabel = new Label();
             PasswordTextBox = new TextBox();
             PasswordLabel = new Label();
             EnterLabel = new Label();
@@ -46,24 +46,24 @@
             // HelloText
             // 
             HelloText.AutoSize = true;
-            HelloText.Font = new Font("Arial Rounded MT Bold", 27.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            HelloText.Location = new Point(132, 177);
+            HelloText.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            HelloText.Location = new Point(160, 165);
             HelloText.Name = "HelloText";
-            HelloText.Size = new Size(570, 43);
+            HelloText.Size = new Size(475, 37);
             HelloText.TabIndex = 0;
             HelloText.Text = "Добро пожаловать в SealBank!";
             HelloText.TextAlign = ContentAlignment.TopCenter;
             HelloText.Click += HelloText_Click;
             // 
-            // NameTextBox
+            // EmailTextBox
             // 
-            NameTextBox.BackColor = Color.White;
-            NameTextBox.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            NameTextBox.Location = new Point(251, 345);
-            NameTextBox.Name = "NameTextBox";
-            NameTextBox.Size = new Size(324, 26);
-            NameTextBox.TabIndex = 1;
-            NameTextBox.TextChanged += textBox1_TextChanged;
+            EmailTextBox.BackColor = Color.White;
+            EmailTextBox.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            EmailTextBox.Location = new Point(251, 297);
+            EmailTextBox.Name = "EmailTextBox";
+            EmailTextBox.Size = new Size(324, 26);
+            EmailTextBox.TabIndex = 1;
+            EmailTextBox.TextChanged += EmailTextBox_TextChanged;
             // 
             // NameLabel
             // 
@@ -74,28 +74,29 @@
             NameLabel.Size = new Size(0, 21);
             NameLabel.TabIndex = 2;
             // 
-            // LoginLabel
+            // EmailLabel
             // 
-            LoginLabel.AutoSize = true;
-            LoginLabel.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            LoginLabel.ForeColor = Color.White;
-            LoginLabel.Location = new Point(147, 343);
-            LoginLabel.Name = "LoginLabel";
-            LoginLabel.Size = new Size(76, 25);
-            LoginLabel.TabIndex = 3;
-            LoginLabel.Text = " Логин:";
-            LoginLabel.Click += label1_Click_1;
+            EmailLabel.AutoSize = true;
+            EmailLabel.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            EmailLabel.ForeColor = Color.White;
+            EmailLabel.Location = new Point(160, 297);
+            EmailLabel.Name = "EmailLabel";
+            EmailLabel.Size = new Size(72, 25);
+            EmailLabel.TabIndex = 3;
+            EmailLabel.Text = "E-mail:";
+            EmailLabel.Click += label1_Click_1;
             // 
             // PasswordTextBox
             // 
             PasswordTextBox.BackColor = Color.White;
             PasswordTextBox.Font = new Font("Arial", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            PasswordTextBox.Location = new Point(251, 395);
+            PasswordTextBox.Location = new Point(251, 351);
             PasswordTextBox.Name = "PasswordTextBox";
             PasswordTextBox.PasswordChar = '*';
             PasswordTextBox.Size = new Size(324, 26);
             PasswordTextBox.TabIndex = 4;
             PasswordTextBox.UseSystemPasswordChar = true;
+            PasswordTextBox.Click += PasswordBox_TextChanged;
             PasswordTextBox.TextChanged += PasswordBox_TextChanged;
             // 
             // PasswordLabel
@@ -103,7 +104,7 @@
             PasswordLabel.AutoSize = true;
             PasswordLabel.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             PasswordLabel.ForeColor = Color.White;
-            PasswordLabel.Location = new Point(147, 396);
+            PasswordLabel.Location = new Point(143, 351);
             PasswordLabel.Name = "PasswordLabel";
             PasswordLabel.Size = new Size(89, 25);
             PasswordLabel.TabIndex = 5;
@@ -115,7 +116,7 @@
             EnterLabel.AutoSize = true;
             EnterLabel.Font = new Font("Arial Rounded MT Bold", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             EnterLabel.ForeColor = SystemColors.Control;
-            EnterLabel.Location = new Point(302, 277);
+            EnterLabel.Location = new Point(297, 229);
             EnterLabel.Name = "EnterLabel";
             EnterLabel.Size = new Size(235, 37);
             EnterLabel.TabIndex = 7;
@@ -130,7 +131,7 @@
             registerButton.FlatStyle = FlatStyle.Flat;
             registerButton.Font = new Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             registerButton.ForeColor = SystemColors.Control;
-            registerButton.Location = new Point(328, 572);
+            registerButton.Location = new Point(340, 515);
             registerButton.Name = "registerButton";
             registerButton.Size = new Size(127, 26);
             registerButton.TabIndex = 8;
@@ -143,7 +144,7 @@
             RegisterText.AutoSize = true;
             RegisterText.Font = new Font("Arial Rounded MT Bold", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             RegisterText.ForeColor = SystemColors.Control;
-            RegisterText.Location = new Point(147, 527);
+            RegisterText.Location = new Point(179, 470);
             RegisterText.Name = "RegisterText";
             RegisterText.Size = new Size(440, 24);
             RegisterText.TabIndex = 10;
@@ -153,9 +154,9 @@
             // logoPictureBox
             // 
             logoPictureBox.Image = (Image)resources.GetObject("logoPictureBox.Image");
-            logoPictureBox.Location = new Point(202, -40);
+            logoPictureBox.Location = new Point(250, -4);
             logoPictureBox.Name = "logoPictureBox";
-            logoPictureBox.Size = new Size(414, 214);
+            logoPictureBox.Size = new Size(325, 166);
             logoPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
             logoPictureBox.TabIndex = 11;
             logoPictureBox.TabStop = false;
@@ -170,7 +171,7 @@
             sendButton.FlatStyle = FlatStyle.Flat;
             sendButton.Font = new Font("Arial", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             sendButton.ForeColor = SystemColors.Control;
-            sendButton.Location = new Point(460, 446);
+            sendButton.Location = new Point(460, 410);
             sendButton.Name = "sendButton";
             sendButton.Size = new Size(115, 26);
             sendButton.TabIndex = 9;
@@ -178,27 +179,27 @@
             sendButton.UseVisualStyleBackColor = false;
             sendButton.Click += enterButtonClick;
             // 
-            // RegisterForm
+            // LoginForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateBlue;
             ClientSize = new Size(1370, 749);
-            Controls.Add(logoPictureBox);
             Controls.Add(RegisterText);
             Controls.Add(sendButton);
             Controls.Add(registerButton);
             Controls.Add(EnterLabel);
             Controls.Add(PasswordLabel);
             Controls.Add(PasswordTextBox);
-            Controls.Add(LoginLabel);
+            Controls.Add(EmailLabel);
             Controls.Add(NameLabel);
-            Controls.Add(NameTextBox);
+            Controls.Add(EmailTextBox);
             Controls.Add(HelloText);
+            Controls.Add(logoPictureBox);
             ForeColor = SystemColors.Control;
-            Name = "RegisterForm";
+            Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "RegisterForm";
+            Text = "LoginForm";
             WindowState = FormWindowState.Maximized;
             Load += LoginForm_Load;
             ((System.ComponentModel.ISupportInitialize)logoPictureBox).EndInit();
@@ -209,9 +210,9 @@
         #endregion
 
         private Label HelloText;
-        private TextBox NameTextBox;
+        private TextBox EmailTextBox;
         private Label NameLabel;
-        private Label LoginLabel;
+        private Label EmailLabel;
         private TextBox PasswordTextBox;
         private Label PasswordLabel;
         private Label EnterLabel;

@@ -10,6 +10,6 @@ namespace SealBank.Interfaces
 {
     public interface ITransferable
     {
-        public TransactionBase Transfer(UserBase addressee, decimal amount);
+        public TransferTransaction Transfer(UserBase addressee, decimal amount);
     }
 }

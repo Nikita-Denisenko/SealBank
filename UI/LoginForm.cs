@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
+using static SealBank.Logic.Validator;
+using SealBank.Data;
 
 namespace SealBank.UI
 {
@@ -23,6 +25,7 @@ namespace SealBank.UI
             this.StartPosition = FormStartPosition.CenterScreen;
             this.WindowState = FormWindowState.Maximized;
             this.StartPosition = FormStartPosition.CenterScreen;
+            this.MinimumSize = new Size(800, 600);
 
             mainPanel = new Panel();
             mainPanel.Size = baseSize;
@@ -73,7 +76,7 @@ namespace SealBank.UI
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void EmailTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -131,12 +134,15 @@ namespace SealBank.UI
 
         private void enterButtonClick(object sender, EventArgs e)
         {
-
+            var email = EmailTextBox.Text;
+            if (IsValidEmail(email) && )
         }
 
         private void registerButtonClick(object sender, EventArgs e)
         {
-
+            this.Hide();
+            var registerForm = new RegisterForm();
+            registerForm.Show();
         }
     }
 }

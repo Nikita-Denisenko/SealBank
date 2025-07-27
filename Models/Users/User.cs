@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static SealBank.Constants.TransactionNames;
 
 namespace SealBank.Models.Users
 {
@@ -38,9 +39,27 @@ namespace SealBank.Models.Users
             Seals += amount;
         }
 
-        public TransactionBase Transfer(UserBase addressee, decimal amount)
+        public TransferTransaction Transfer(UserBase addressee, decimal amount)
         {
+            if (addressee == null)
+                throw new ArgumentNullException(nameof(addressee));
+
+            if (amount <= 0)
+                throw new ArgumentOutOfRangeException(nameof(amount), "Amount must be greater than zero.");
             
+            if (!WithdrawMoney(amount))
+                throw new InvalidOperationException("Insufficient funds.");
+
+            addressee.GiveMoney(amount);
+
+            return new TransferTransaction(
+                TransactionType.Transfer,
+                DisplayNames[TransactionType.Transfer],
+                DateTime.Now,
+                this,
+                amount,
+                addressee
+            );
         }
     }
 }

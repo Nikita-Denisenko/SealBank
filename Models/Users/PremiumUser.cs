@@ -38,7 +38,7 @@ namespace SealBank.Models.Users
             Seals += amount;
         }
 
-        public TransactionBase Transfer(UserBase addressee, decimal amount)
+        public TransferTransaction Transfer(UserBase addressee, decimal amount)
         {
             throw new NotImplementedException();
         }
