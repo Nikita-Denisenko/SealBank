@@ -14,13 +14,21 @@ namespace SealBank.Models.Users
     (
         int id,
         string name,
+        string surname,
         string gender,
         DateTime birthDay,
         string email,
         string password,
         string phoneNumber,
-        UserType userType
-    )   : UserBase(id, name, gender, birthDay, email, password, phoneNumber, userType),
+        UserType userType,
+        decimal balance,
+        List<TransactionBase> history
+    )   : UserBase
+        (
+            id, name, surname, gender, birthDay, 
+            email, password, phoneNumber, userType,
+            balance, history
+        ),
         ITransferable,
         IBonusReceivable
     {

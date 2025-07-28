@@ -1,0 +1,49 @@
+[
+  {
+    "Id": 1,
+    "Name": "Максим",
+    "Surname": "Игнатов",
+    "Gender": "Мужской",
+    "Birthday": "1990-05-14T00:00:00",
+    "Email": "maks_ignatov@mail.ru",
+    "Password": "abcde99999",
+    "PhoneNumbder": "+79492781473",
+    "UserType": 0,
+    "Balance": 12500,
+    "History": [],
+    "SpendingCategories": [ 0, 3, 4 ],
+    "BasicBonusPercent": 1,
+    "Seals": 56
+  },
+
+  {
+    "Id": 2,
+    "Name": "Алина",
+    "Surname": "Лицоева",
+    "Gender": "Женский",
+    "Birthday": "1999-12-02T00:00:00",
+    "Email": "alinochka1999@mail.ru",
+    "Password": "F8MLefKNEulH31e5",
+    "PhoneNumbder": "+79494602050",
+    "UserType": 1,
+    "Balance": 25317,
+    "History": [],
+    "SpendingCategories": [ 1, 3, 7 ],
+    "BasicBonusPercent": 2,
+    "Seals": 149
+  },
+
+  {
+    "Id": 3,
+    "Name": "Григорий",
+    "Surname": "Аверин",
+    "Gender": "Мужской",
+    "Birthday": "1985-09-23T00:00:00",
+    "Email": "averin_grisha@mail.ru",
+    "Password": "g7q4ssxXXn4taK",
+    "PhoneNumbder": "+79495780264",
+    "UserType": 2,
+    "Balance": 780911,
+    "History": []
+  }
+]

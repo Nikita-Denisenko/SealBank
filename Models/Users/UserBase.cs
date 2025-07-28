@@ -12,24 +12,30 @@ namespace SealBank.Models.Users
         (
             int id,
             string name,
+            string surname,
             string gender,
             DateTime birthDay,
             string email,
             string password,
             string phoneNumber,
-            UserType userType
+            UserType userType,
+            decimal balance,
+            List<TransactionBase> history
         )
     {
         public int Id { get; } = id;
         public string Name { get; } = name;
+        public string Surname { get; } = surname;
         public string Email { get; private set; } = email;
         public string Password { get; private set; } = password;
         public string Gender { get; } = gender;
         public DateTime BirthDay { get; } = birthDay;
+        public int Age => DateTime.Today.Year - BirthDay.Year -
+                  (DateTime.Today.DayOfYear < BirthDay.DayOfYear ? 1 : 0);
         public string PhoneNumber { get; private set; } = phoneNumber;
-        public decimal Balance { get; private set; } = 0;
-        public List<TransactionBase> History { get; private set; } = [];
         public UserType UserType { get; private set; } = userType;
+        public decimal Balance { get; private set; } = balance;
+        public List<TransactionBase> History { get; private set; } = history;
 
         public void GiveMoney(decimal amount)
         {
