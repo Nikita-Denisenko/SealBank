@@ -13,13 +13,17 @@ namespace SealBank.Models.Transactions
         TransactionType type,
         string name, 
         DateTime dateTime,
-        UserBase user
+        int userId,
+        string userName,
+        string message
     )
 
     {
         public TransactionType Type { get; } = type;
         public string Name { get; } = name;
         public DateTime DateTime { get; } = dateTime;
-        public UserBase User { get; } = user;
+        public int UserId { get; } = userId;
+        public string UserName { get; } = userName;
+        public string Message { get; } = message;
     }
 }

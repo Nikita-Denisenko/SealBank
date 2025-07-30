@@ -13,11 +13,13 @@ namespace SealBank.Models.Transactions
         TransactionType type,
         string name,
         DateTime dateTime,
-        UserBase user,
+        int userId,
+        string userName,
+        string message,
         SpendingCategory spendingCategory,
         string categoryName,
         decimal wastedMoneyAmount
-    ) : TransactionBase(type, name, dateTime, user)
+    ) : TransactionBase(type, name, dateTime, userId, message, userName)
 
     {
         public SpendingCategory SpendingCategory { get; } = spendingCategory;

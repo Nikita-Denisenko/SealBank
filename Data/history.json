@@ -1,0 +1,36 @@
+﻿[
+  {
+    "Type": 0,
+    "Name": "Transfer",
+    "DateTime": "2025-07-01T15:30:00",
+    "UserId": 1,
+    "UserName": "Максим",
+    "Message": "Максим перевёл 500₽ пользователю Алина",
+    "MoneyAmount": 500,
+    "AnotherUserId": 2,
+    "AnotherUserName": "Алина"
+  },
+  {
+    "Type": 1,
+    "Name": "Bonus",
+    "DateTime": "2025-07-02T18:45:00",
+    "UserId": 2,
+    "UserName": "Алина",
+    "Message": "Алина получила 30 seal за трату 1500₽ на Развлечения",
+    "SpendingCategory": 3,
+    "CategoryName": "Развлечения",
+    "WastedMoneyAmount": 1500,
+    "ReceivedSealsQuantity": 30
+  },
+  {
+    "Type": 0,
+    "Name": "Transfer",
+    "DateTime": "2025-07-03T11:10:00",
+    "UserId": 3,
+    "UserName": "Григорий",
+    "Message": "Григорий перевёл 10000₽ пользователю Максим",
+    "MoneyAmount": 10000,
+    "AnotherUserId": 1,
+    "AnotherUserName": "Максим"
+  }
+]

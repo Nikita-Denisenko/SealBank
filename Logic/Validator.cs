@@ -1,5 +1,4 @@
-﻿using SealBank.Data;
-using SealBank.Models.Users;
+﻿using SealBank.Models.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,9 +1,9 @@
 [
   {
     "Id": 1,
-    "Name": "Максим",
-    "Surname": "Игнатов",
-    "Gender": "Мужской",
+    "Name": "пїЅпїЅпїЅпїЅпїЅпїЅ",
+    "Surname": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+    "Gender": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "Birthday": "1990-05-14T00:00:00",
     "Email": "maks_ignatov@mail.ru",
     "Password": "abcde99999",
@@ -18,9 +18,9 @@
 
   {
     "Id": 2,
-    "Name": "Алина",
-    "Surname": "Лицоева",
-    "Gender": "Женский",
+    "Name": "пїЅпїЅпїЅпїЅпїЅ",
+    "Surname": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+    "Gender": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "Birthday": "1999-12-02T00:00:00",
     "Email": "alinochka1999@mail.ru",
     "Password": "F8MLefKNEulH31e5",
@@ -35,9 +35,9 @@
 
   {
     "Id": 3,
-    "Name": "Григорий",
-    "Surname": "Аверин",
-    "Gender": "Мужской",
+    "Name": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
+    "Surname": "пїЅпїЅпїЅпїЅпїЅпїЅ",
+    "Gender": "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
     "Birthday": "1985-09-23T00:00:00",
     "Email": "averin_grisha@mail.ru",
     "Password": "g7q4ssxXXn4taK",

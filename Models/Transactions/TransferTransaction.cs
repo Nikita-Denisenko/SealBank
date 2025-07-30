@@ -1,10 +1,7 @@
 ﻿using SealBank.Constants;
-using SealBank.Models.Users;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace SealBank.Models.Transactions
 {
@@ -13,13 +10,17 @@ namespace SealBank.Models.Transactions
         TransactionType type,
         string name,
         DateTime dateTime,
-        UserBase user,
+        int userId,
+        string userName,
+        string message,
         decimal moneyAmount,
-        UserBase anotherUser
-    ) : TransactionBase(type, name, dateTime, user)
-
+        int anotherUserId,
+        string anotherUserName
+    ) : TransactionBase(type, name, dateTime, userId, message, userName)
     {
         public decimal MoneyAmount { get; } = moneyAmount;
-        public UserBase AnotherUser { get; } = anotherUser;
+        public int AnotherUserId { get; } = anotherUserId; 
+        public string AnotherUserName { get; } = anotherUserName;
     }
 }
+

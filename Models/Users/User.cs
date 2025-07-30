@@ -4,9 +4,11 @@ using SealBank.Models.Transactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 using static SealBank.Constants.TransactionNames;
+using static SealBank.Logic.TransactionMessageService;
 
 namespace SealBank.Models.Users
 {
@@ -61,12 +63,21 @@ namespace SealBank.Models.Users
             addressee.GiveMoney(amount);
 
             return new TransferTransaction(
-                TransactionType.Transfer,
-                DisplayNames[TransactionType.Transfer],
-                DateTime.Now,
-                this,
-                amount,
-                addressee
+              TransactionType.Transfer,
+              DisplayNames[TransactionType.Transfer],
+              DateTime.Now,
+              Id,
+              Name,
+              GenerateMessage
+              (
+                  TransactionType.Transfer,
+                  Name,
+                  addressee.Name,
+                  amount
+              ),
+              amount,
+              addressee.Id,
+              addressee.Name
             );
         }
     }
