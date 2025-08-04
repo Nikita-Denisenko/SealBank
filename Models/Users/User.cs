@@ -2,6 +2,7 @@
 using SealBank.Interfaces;
 using SealBank.Models.Transactions;
 using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata.Ecma335;
@@ -21,15 +22,11 @@ namespace SealBank.Models.Users
         DateTime birthDay,
         string email,
         string password,
-        string phoneNumber,
-        UserType userType,
-        decimal balance,
-        List<TransactionBase> history
+        string phoneNumber
     )   : UserBase
         (
             id, name, surname, gender, birthDay, 
-            email, password, phoneNumber, userType,
-            balance, history
+            email, password, phoneNumber
         ),
         ITransferable,
         IBonusReceivable
@@ -56,7 +53,7 @@ namespace SealBank.Models.Users
 
             if (amount <= 0)
                 throw new ArgumentOutOfRangeException(nameof(amount), "Amount must be greater than zero.");
-            
+
             if (!WithdrawMoney(amount))
                 throw new InvalidOperationException("Insufficient funds.");
 

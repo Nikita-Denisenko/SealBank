@@ -17,10 +17,7 @@ namespace SealBank.Models.Users
             DateTime birthDay,
             string email,
             string password,
-            string phoneNumber,
-            UserType userType,
-            decimal balance,
-            List<TransactionBase> history
+            string phoneNumber
         )
     {
         public int Id { get; } = id;
@@ -33,9 +30,9 @@ namespace SealBank.Models.Users
         public int Age => DateTime.Today.Year - BirthDay.Year -
                   (DateTime.Today.DayOfYear < BirthDay.DayOfYear ? 1 : 0);
         public string PhoneNumber { get; private set; } = phoneNumber;
-        public UserType UserType { get; private set; } = userType;
-        public decimal Balance { get; private set; } = balance;
-        public List<TransactionBase> History { get; private set; } = history;
+        public UserType UserType { get; private set; } = UserType.User;
+        public decimal Balance { get; private set; } = 0;
+        public List<TransactionBase> History { get; private set; } = [];
 
         public void GiveMoney(decimal amount)
         {

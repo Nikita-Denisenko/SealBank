@@ -18,12 +18,12 @@ namespace SealBank.UI
     {
         private Panel mainPanel;
         private readonly Size baseSize = new Size(800, 600);
-        private readonly BankManagement BankManagement;
+        private readonly BankManagement Bank;
 
         public LoginForm(BankManagement bankManagement) 
         {
             InitializeComponent();
-            this.BankManagement = bankManagement;
+            this.Bank = bankManagement;
             this.Size = new Size(1920, 1080);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.WindowState = FormWindowState.Maximized;
@@ -138,14 +138,29 @@ namespace SealBank.UI
         private void enterButtonClick(object sender, EventArgs e)
         {
             var email = EmailTextBox.Text;
+            var password = PasswordTextBox.Text;
             
+            if (!IsLoginSuccessful(email, password, Bank.Users))
+            {
+                MessageBox.Show("Неверный email или пароль!");
+                return;
+            }
+
+            this.DialogResult = DialogResult.OK;
+            Close();
         }
 
         private void registerButtonClick(object sender, EventArgs e)
         {
-            this.Hide();
-            var registerForm = new RegisterForm();
-            registerForm.Show();
+            Hide();
+            var registerForm = new RegisterForm(Bank);
+            var result = registerForm.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                DialogResult = DialogResult.OK;  
+                Close();
+            }
         }
     }
 }

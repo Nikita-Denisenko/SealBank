@@ -19,7 +19,7 @@ namespace SealBank.Managers
         public List<UserBase> Users { get; } = users;
         public List<TransactionBase> TransactionHistory { get; } = transactionHistory;
 
-        public void AddUser(UserBase user) => Users.Add(user);
+        public void AddUser(User user) => Users.Add(user);
         public void AddTransaction(TransactionBase transaction) => TransactionHistory.Add(transaction);
         public void AddToBankBalance(decimal amount) => BankBalance += amount;
         public bool TryWithdrawFromBank(decimal amount)

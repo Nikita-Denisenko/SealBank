@@ -1,30 +1,40 @@
-﻿using SealBank.Constants;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using SealBank.Constants;
 using SealBank.Models;
 using SealBank.Models.Users;
-using System.Text.Json;
 
 namespace SealBank.DataLoaders
 {
+    using Newtonsoft.Json;
+    using Newtonsoft.Json.Linq;
+    using SealBank.Constants;
+    using SealBank.Models.Users;
+    using System.Collections.Generic;
+    using System.IO;
+
     public static class UserLoader
     {
         public static List<UserBase> LoadUsers(string path)
         {
-            var result = new List<UserBase>();
             var json = File.ReadAllText(path);
-            using var doc = JsonDocument.Parse(json);
+            var array = JArray.Parse(json);
 
-            foreach (var element in doc.RootElement.EnumerateArray())
+            var result = new List<UserBase>();
+
+            foreach (var token in array)
             {
-                if (!element.TryGetProperty("UserType", out var typeProp))
+                var userTypeToken = token["UserType"];
+                if (userTypeToken == null)
                     continue;
 
-                var userType = (UserType)typeProp.GetInt32();
+                var userType = (UserType)userTypeToken.ToObject<int>();
 
                 UserBase? user = userType switch
                 {
-                    UserType.User => JsonSerializer.Deserialize<User>(element.GetRawText()),
-                    UserType.PremiumUser => JsonSerializer.Deserialize<PremiumUser>(element.GetRawText()),
-                    UserType.BusinessUser => JsonSerializer.Deserialize<BusinessUser>(element.GetRawText()),
+                    UserType.User => token.ToObject<User>(),
+                    UserType.PremiumUser => token.ToObject<PremiumUser>(),
+                    UserType.BusinessUser => token.ToObject<BusinessUser>(),
                     _ => null
                 };
 
@@ -34,5 +44,6 @@ namespace SealBank.DataLoaders
 
             return result;
         }
+
     }
 }
