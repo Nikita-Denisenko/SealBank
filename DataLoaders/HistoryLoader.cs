@@ -1,6 +1,5 @@
 ﻿using SealBank.Models.Transactions;
 using System.Text.Json;
-using SealBank.Constants;
 
 namespace SealBank.DataLoaders
 {
@@ -15,18 +14,18 @@ namespace SealBank.DataLoaders
             using JsonDocument doc = JsonDocument.Parse(json);
             foreach (var element in doc.RootElement.EnumerateArray())
             {
-                if (!element.TryGetProperty("Type", out var typeProp))
+                if (!element.TryGetProperty("Discriminator", out var typeProp))
                     continue;
 
-                var typeValue = (TransactionType)typeProp.GetInt32();
+                string typeValue = typeProp.GetString() ?? "";
 
                 TransactionBase? transaction = typeValue switch
                 {
-                    TransactionType.Transfer => JsonSerializer.Deserialize<TransferTransaction>(element.GetRawText()),
-                    TransactionType.Bonus => JsonSerializer.Deserialize<BonusTransaction>(element.GetRawText()),
-                    TransactionType.Deposit => JsonSerializer.Deserialize<DepositTransaction>(element.GetRawText()),
-                    TransactionType.Withdrawal => JsonSerializer.Deserialize<WithdrawalTransaction>(element.GetRawText()),
-                    TransactionType.Payment => JsonSerializer.Deserialize<PaymentTransaction>(element.GetRawText()),
+                    "Transfer" => JsonSerializer.Deserialize<TransferTransaction>(element.GetRawText()),
+                    "Bonus" => JsonSerializer.Deserialize<BonusTransaction>(element.GetRawText()),
+                    "Deposit" => JsonSerializer.Deserialize<DepositTransaction>(element.GetRawText()),
+                    "Withdrawal" => JsonSerializer.Deserialize<WithdrawalTransaction>(element.GetRawText()),
+                    "Payment" => JsonSerializer.Deserialize<PaymentTransaction>(element.GetRawText()),
                     _ => null
                 };
 

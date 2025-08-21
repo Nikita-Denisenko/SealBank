@@ -77,6 +77,7 @@
             // 
             // NameBox
             // 
+            NameBox.Font = new Font("Segoe UI", 9F);
             NameBox.Location = new Point(299, 186);
             NameBox.Name = "NameBox";
             NameBox.Size = new Size(240, 23);

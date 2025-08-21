@@ -1,49 +1,143 @@
-[
-  {
-    "Id": 1,
-    "Name": "������",
-    "Surname": "�������",
-    "Gender": "�������",
-    "Birthday": "1990-05-14T00:00:00",
-    "Email": "maks_ignatov@mail.ru",
-    "Password": "abcde99999",
-    "PhoneNumbder": "+79492781473",
-    "UserType": 0,
-    "Balance": 12500,
-    "History": [],
-    "SpendingCategories": [ 0, 3, 4 ],
-    "BasicBonusPercent": 1,
-    "Seals": 56
-  },
-
-  {
-    "Id": 2,
-    "Name": "�����",
-    "Surname": "�������",
-    "Gender": "�������",
-    "Birthday": "1999-12-02T00:00:00",
-    "Email": "alinochka1999@mail.ru",
-    "Password": "F8MLefKNEulH31e5",
-    "PhoneNumbder": "+79494602050",
-    "UserType": 1,
-    "Balance": 25317,
-    "History": [],
-    "SpendingCategories": [ 1, 3, 7 ],
-    "BasicBonusPercent": 2,
-    "Seals": 149
-  },
-
-  {
-    "Id": 3,
-    "Name": "��������",
-    "Surname": "������",
-    "Gender": "�������",
-    "Birthday": "1985-09-23T00:00:00",
-    "Email": "averin_grisha@mail.ru",
-    "Password": "g7q4ssxXXn4taK",
-    "PhoneNumbder": "+79495780264",
-    "UserType": 2,
-    "Balance": 780911,
-    "History": []
-  }
-]
+{
+  "$type": "System.Collections.Generic.List`1[[SealBank.Models.Users.UserBase, SealBank]], System.Private.CoreLib",
+  "$values": [
+    {
+      "$type": "SealBank.Models.Users.User, SealBank",
+      "SpendingCategories": {
+        "$type": "System.Collections.Generic.List`1[[SealBank.Constants.SpendingCategory, SealBank]], System.Private.CoreLib",
+        "$values": [ 0, 3, 4 ]
+      },
+      "BasicBonusPercent": 1,
+      "Seals": 0,
+      "Id": "f3a2c9d6-8c5a-4f12-9b6b-1f9e1d3a2c7e",
+      "Name": "Михаил",
+      "Surname": "Игнатов",
+      "Email": "maks_ignatov@mail.ru",
+      "Password": "abcde99999",
+      "Gender": "Мужской",
+      "BirthDay": "1990-05-14T00:00:00",
+      "Age": 35,
+      "PhoneNumber": "+79490026581",
+      "UserTypeId": 0,
+      "Balance": 0.0,
+      "History": {
+        "$type": "System.Collections.Generic.List`1[[SealBank.Models.Transactions.TransactionBase, SealBank]], System.Private.CoreLib",
+        "$values": []
+      }
+    },
+    {
+      "$type": "SealBank.Models.Users.PremiumUser, SealBank",
+      "SpendingCategories": {
+        "$type": "System.Collections.Generic.List`1[[SealBank.Constants.SpendingCategory, SealBank]], System.Private.CoreLib",
+        "$values": [ 1, 3, 7 ]
+      },
+      "BasicBonusPercent": 2,
+      "Seals": 0,
+      "Id": "7b1f9c5e-3d1b-4a91-9a6e-2e4c5f8d7a2b",
+      "Name": "Алина",
+      "Surname": "Петрова",
+      "Email": "alinochka1999@mail.ru",
+      "Password": "F8MLefKNEulH31e5",
+      "Gender": "Женский",
+      "BirthDay": "1999-12-02T00:00:00",
+      "Age": 25,
+      "PhoneNumber": "+79495747884",
+      "UserTypeId": 0,
+      "Balance": 0.0,
+      "History": {
+        "$type": "System.Collections.Generic.List`1[[SealBank.Models.Transactions.TransactionBase, SealBank]], System.Private.CoreLib",
+        "$values": []
+      }
+    },
+    {
+      "$type": "SealBank.Models.Users.BusinessUser, SealBank",
+      "Id": "d4b6f2c3-5f8a-4b9c-86f5-2d7a1b3e4c6f",
+      "Name": "Григорий",
+      "Surname": "Аверин",
+      "Email": "averin_grisha@mail.ru",
+      "Password": "g7q4ssxXXn4taK",
+      "Gender": "Мужской",
+      "BirthDay": "1985-09-23T00:00:00",
+      "Age": 39,
+      "PhoneNumber": "+79499274511",
+      "UserTypeId": 0,
+      "Balance": 0.0,
+      "History": {
+        "$type": "System.Collections.Generic.List`1[[SealBank.Models.Transactions.TransactionBase, SealBank]], System.Private.CoreLib",
+        "$values": []
+      }
+    },
+    {
+      "$type": "SealBank.Models.Users.User, SealBank",
+      "SpendingCategories": {
+        "$type": "System.Collections.Generic.List`1[[SealBank.Constants.SpendingCategory, SealBank]], System.Private.CoreLib",
+        "$values": []
+      },
+      "BasicBonusPercent": 1,
+      "Seals": 0,
+      "Id": "e1c5b2d4-7a9f-4c6b-81d2-9a3f1b6d4c5e",
+      "Name": "Мария",
+      "Surname": "Коробова",
+      "Email": "korobovamasha@mail.ru",
+      "Password": "55555555",
+      "Gender": "Женский",
+      "BirthDay": "2001-11-23T00:00:00",
+      "Age": 23,
+      "PhoneNumber": "+79494662089",
+      "UserTypeId": 0,
+      "Balance": 0.0,
+      "History": {
+        "$type": "System.Collections.Generic.List`1[[SealBank.Models.Transactions.TransactionBase, SealBank]], System.Private.CoreLib",
+        "$values": []
+      }
+    },
+    {
+      "$type": "SealBank.Models.Users.User, SealBank",
+      "SpendingCategories": {
+        "$type": "System.Collections.Generic.List`1[[SealBank.Constants.SpendingCategory, SealBank]], System.Private.CoreLib",
+        "$values": []
+      },
+      "BasicBonusPercent": 1,
+      "Seals": 0,
+      "Id": "b7d2f1c3-6e8a-4b9c-9d1f-7c3a2b4d5e6f",
+      "Name": "Тимур",
+      "Surname": "Забеев",
+      "Email": "zabeevtimur78@mail.ru",
+      "Password": "22222222",
+      "Gender": "Мужской",
+      "BirthDay": "2004-09-14T00:00:00",
+      "Age": 20,
+      "PhoneNumber": "+79493781432",
+      "UserTypeId": 0,
+      "Balance": 0.0,
+      "History": {
+        "$type": "System.Collections.Generic.List`1[[SealBank.Models.Transactions.TransactionBase, SealBank]], System.Private.CoreLib",
+        "$values": []
+      }
+    },
+    {
+      "$type": "SealBank.Models.Users.User, SealBank",
+      "SpendingCategories": {
+        "$type": "System.Collections.Generic.List`1[[SealBank.Constants.SpendingCategory, SealBank]], System.Private.CoreLib",
+        "$values": []
+      },
+      "BasicBonusPercent": 1,
+      "Seals": 0,
+      "Id": "c1a3b2d4-5f6e-4a9b-8d1c-2b3e4f5a6c7d",
+      "Name": "Антон",
+      "Surname": "Алексеев",
+      "Email": "alexeevan31@mail.ru",
+      "Password": "ghjklasq",
+      "Gender": "Мужской",
+      "BirthDay": "2004-12-31T00:00:00",
+      "Age": 20,
+      "PhoneNumber": "+79178522632",
+      "UserTypeId": 0,
+      "Balance": 0.0,
+      "History": {
+        "$type": "System.Collections.Generic.List`1[[SealBank.Models.Transactions.TransactionBase, SealBank]], System.Private.CoreLib",
+        "$values": []
+      }
+    }
+  ]
+}

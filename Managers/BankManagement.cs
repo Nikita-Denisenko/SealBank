@@ -19,6 +19,9 @@ namespace SealBank.Managers
         public List<UserBase> Users { get; } = users;
         public List<TransactionBase> TransactionHistory { get; } = transactionHistory;
 
+        public UserBase? CurrentUser { get; private set; } = null;
+
+        public void SetCurrentUser(UserBase user) => CurrentUser = user;
         public void AddUser(User user) => Users.Add(user);
         public void AddTransaction(TransactionBase transaction) => TransactionHistory.Add(transaction);
         public void AddToBankBalance(decimal amount) => BankBalance += amount;

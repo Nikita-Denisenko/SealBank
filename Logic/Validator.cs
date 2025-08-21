@@ -129,16 +129,16 @@ namespace SealBank.Logic
             return !EmailExists(email, users);
         }
 
-        public static bool IsLoginSuccessful(string email, string password, List<UserBase> bankUsers)
+        public static UserBase? Login(string email, string password, List<UserBase> bankUsers)
         {
             var userAccount = bankUsers.
                 FirstOrDefault(user => user.Email == email);
 
-            if (userAccount is null) return false;
+            if (userAccount is null) return null;
 
-            if (userAccount.Password != password) return false;
+            if (userAccount.Password != password) return null;
 
-            return true;
+            return userAccount;
         }
 
         public static void IsRegistrationSuccessful

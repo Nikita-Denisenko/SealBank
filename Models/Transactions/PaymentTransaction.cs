@@ -10,20 +10,20 @@ namespace SealBank.Models.Transactions
 {
     public class PaymentTransaction
     (
-        TransactionType type,
         string name,
         DateTime dateTime,
-        int userId,
+        Guid userId,
         string userName,
         string message,
         SpendingCategory spendingCategory,
         string categoryName,
         decimal wastedMoneyAmount
-    ) : TransactionBase(type, name, dateTime, userId, message, userName)
+    ) : TransactionBase(name, dateTime, userId, message, userName)
 
     {
         public SpendingCategory SpendingCategory { get; } = spendingCategory;
         public string CategoryName { get; } = categoryName;
         public decimal WastedMoneyAmount { get; } = wastedMoneyAmount;
+        public override string Discriminator => "Payment";
     }
 }

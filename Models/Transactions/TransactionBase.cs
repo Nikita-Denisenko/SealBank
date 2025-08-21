@@ -10,20 +10,20 @@ namespace SealBank.Models.Transactions
 {
     public abstract class TransactionBase
     (
-        TransactionType type,
         string name, 
         DateTime dateTime,
-        int userId,
+        Guid userId,
         string userName,
         string message
     )
 
     {
-        public TransactionType Type { get; } = type;
+        public Guid TransactionTypeId { get; } = Guid.NewGuid();
         public string Name { get; } = name;
         public DateTime DateTime { get; } = dateTime;
-        public int UserId { get; } = userId;
+        public Guid UserId { get; } = userId;
         public string UserName { get; } = userName;
         public string Message { get; } = message;
+        public abstract string Discriminator { get; }
     }
 }

@@ -10,16 +10,16 @@ namespace SealBank.Models.Transactions
 {
     public class WithdrawalTransaction
     (
-        TransactionType type,
         string name,
         DateTime dateTime,
-        int userId,
+        Guid userId,
         string userName,
         string message,
         decimal moneyAmount
-    ) : TransactionBase(type, name, dateTime, userId, message, userName)
+    ) : TransactionBase(name, dateTime, userId, message, userName)
 
     {
         public decimal MoneyAmount { get; } = moneyAmount;
+        public override string Discriminator => "Withdrawal";
     }
 }

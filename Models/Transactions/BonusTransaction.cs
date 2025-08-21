@@ -10,22 +10,22 @@ namespace SealBank.Models.Transactions
 {
     public class BonusTransaction
     (
-        TransactionType type,
         string name,
         DateTime dateTime,
-        int userId,
+        Guid userId,
         string userName,
         string message,
         SpendingCategory spendingCategory,
         string categoryName,
         decimal wastedMoneyAmount,
         int receivedSealsQuantity
-    )   : TransactionBase(type, name, dateTime, userId, message, userName)
+    )   : TransactionBase(name, dateTime, userId, message, userName)
 
     {
         public SpendingCategory SpendingCategory { get; } = spendingCategory;
         public string CategoryName { get; } = categoryName;
         public decimal WastedMoneyAmount { get; } = wastedMoneyAmount;
         public int ReceivedSealsQuantity { get; } = receivedSealsQuantity;
+        public override string Discriminator => "Bonus";
     }
 }

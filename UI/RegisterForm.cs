@@ -130,10 +130,12 @@ namespace SealBank.UI
 
 
             var user = new User
-                (id, name, surname, gender, birthday, email, password, phoneNumber);
+                (name, surname, gender, birthday, email, password, phoneNumber);
 
             Bank.AddUser(user);
-            UserSaver.SaveUsers("Data/users.json", Bank.Users);
+            Bank.SetCurrentUser(user);
+            UserSaver.SaveUsers(Bank.Users);
+
 
             DialogResult = DialogResult.OK; 
             Close();

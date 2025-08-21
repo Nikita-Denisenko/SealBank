@@ -17,33 +17,14 @@ namespace SealBank.DataLoaders
     {
         public static List<UserBase> LoadUsers(string path)
         {
-            var json = File.ReadAllText(path);
-            var array = JArray.Parse(json);
-
-            var result = new List<UserBase>();
-
-            foreach (var token in array)
+            var settings = new JsonSerializerSettings
             {
-                var userTypeToken = token["UserType"];
-                if (userTypeToken == null)
-                    continue;
+                TypeNameHandling = TypeNameHandling.All,
+            };
 
-                var userType = (UserType)userTypeToken.ToObject<int>();
-
-                UserBase? user = userType switch
-                {
-                    UserType.User => token.ToObject<User>(),
-                    UserType.PremiumUser => token.ToObject<PremiumUser>(),
-                    UserType.BusinessUser => token.ToObject<BusinessUser>(),
-                    _ => null
-                };
-
-                if (user != null)
-                    result.Add(user);
-            }
-
-            return result;
+            var json = File.ReadAllText(path);
+            var users = JsonConvert.DeserializeObject<List<UserBase>>(json, settings);
+            return users ?? new List<UserBase>();
         }
-
     }
 }

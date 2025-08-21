@@ -154,7 +154,7 @@
             // logoPictureBox
             // 
             logoPictureBox.Image = (Image)resources.GetObject("logoPictureBox.Image");
-            logoPictureBox.Location = new Point(250, -4);
+            logoPictureBox.Location = new Point(237, -4);
             logoPictureBox.Name = "logoPictureBox";
             logoPictureBox.Size = new Size(325, 166);
             logoPictureBox.SizeMode = PictureBoxSizeMode.Zoom;

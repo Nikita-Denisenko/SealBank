@@ -139,12 +139,15 @@ namespace SealBank.UI
         {
             var email = EmailTextBox.Text;
             var password = PasswordTextBox.Text;
-            
-            if (!IsLoginSuccessful(email, password, Bank.Users))
+            var user = Login(email, password, Bank.Users);
+
+            if (user is null)
             {
                 MessageBox.Show("Неверный email или пароль!");
                 return;
             }
+
+            Bank.SetCurrentUser(user);
 
             this.DialogResult = DialogResult.OK;
             Close();
