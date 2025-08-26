@@ -212,6 +212,7 @@ namespace SealBank.Logic
             {
                 IsSuccessful = false;
                 Message = repeatPasswordMessage;
+                return;
             }
 
             IsSuccessful = true;
