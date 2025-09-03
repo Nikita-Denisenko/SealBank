@@ -9,10 +9,10 @@ namespace SealBank.Interfaces
 {
     public interface IBonusReceivable
     {
-        public List<SpendingCategory> SpendingCategories { get; }
+        public List<SpendingCategoryType> SpendingCategories { get; }
         public int BasicBonusPercent { get; }
         public int Seals { get; }
         public void AddSealBonus(int amount);
-        public List<SpendingCategory> ChooseCategories();
+        public List<SpendingCategoryType> ChooseCategories();
     }
 }

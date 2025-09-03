@@ -16,12 +16,16 @@ namespace SealBank.Models.Users
         string gender,
         DateTime birthDay,
         string email,
-        string password,
-        string phoneNumber
+        string passwordHash,
+        string salt,
+        string phoneNumber,
+        int userTypeId,
+        decimal balance,
+        List<TransactionBase> history
     ) : UserBase
         (
             name, surname, gender, birthDay, 
-            email, password, phoneNumber
+            email, passwordHash, salt, phoneNumber, userTypeId, balance, history
         )
     {
    

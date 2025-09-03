@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SealBank.Constants
 {
-    public enum SpendingCategory
+    public enum SpendingCategoryType
     {
         Recreations,
         Restaurants,

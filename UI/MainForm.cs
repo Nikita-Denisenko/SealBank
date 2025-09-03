@@ -1,4 +1,5 @@
 ﻿using SealBank.DataSavers;
+using SealBank.Interfaces;
 using SealBank.Managers;
 using System;
 using System.Collections.Generic;
@@ -24,8 +25,15 @@ namespace SealBank.UI
             this.WindowState = FormWindowState.Maximized;
             this.MinimumSize = new Size(800, 600);
             this.StartPosition = FormStartPosition.CenterScreen;
-            userNameLabel.Text = bankManagement.CurrentUser.Name;
-            userSurnameLabel.Text = bankManagement.CurrentUser.Surname;
+            var user = bankManagement.CurrentUser;
+            userNameLabel.Text = user.Name;
+            userSurnameLabel.Text = user.Surname;
+            surnameNameLabel.Text = $"{userSurnameLabel.Text} {userNameLabel.Text}";
+            balanceLabel.Text = $"{user.Balance} ₽";
+            if (user is IBonusReceivable bonusUser)
+            {
+                sealsLabel.Text = bonusUser.Seals.ToString();
+            }
             Bank = bankManagement;
         }
         private void MainForm_Load(object sender, EventArgs e)
@@ -188,6 +196,11 @@ namespace SealBank.UI
         private void ProfileLinkLabel_MouseLeave(object sender, EventArgs e)
         {
             ProfileLinkLabel.LinkColor = Color.Black;
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+
         }
     }
 }

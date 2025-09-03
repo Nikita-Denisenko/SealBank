@@ -15,14 +15,14 @@ namespace SealBank.Models.Transactions
         Guid userId,
         string userName,
         string message,
-        SpendingCategory spendingCategory,
+        SpendingCategoryType spendingCategory,
         string categoryName,
         decimal wastedMoneyAmount,
         int receivedSealsQuantity
     )   : TransactionBase(name, dateTime, userId, message, userName)
 
     {
-        public SpendingCategory SpendingCategory { get; } = spendingCategory;
+        public SpendingCategoryType SpendingCategory { get; } = spendingCategory;
         public string CategoryName { get; } = categoryName;
         public decimal WastedMoneyAmount { get; } = wastedMoneyAmount;
         public int ReceivedSealsQuantity { get; } = receivedSealsQuantity;

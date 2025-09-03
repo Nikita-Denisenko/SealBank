@@ -40,6 +40,13 @@
             transfersLinkLabel = new LinkLabel();
             mainLinkLabel = new LinkLabel();
             historyPanel = new Panel();
+            pictureBox3 = new PictureBox();
+            sealsLabel = new Label();
+            sealsTextLabel = new Label();
+            balanceLabel = new Label();
+            balanceTextLabel = new Label();
+            surnameNameLabel = new Label();
+            pictureBox2 = new PictureBox();
             userMenuLabel = new Label();
             historyLinkLabel = new LinkLabel();
             bonusesLinkLabel = new LinkLabel();
@@ -47,10 +54,16 @@
             favouritesLinkLabel = new LinkLabel();
             creditLinkLabel = new LinkLabel();
             ProfileLinkLabel = new LinkLabel();
+            pictureBox4 = new PictureBox();
+            label1 = new Label();
             logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)logoPictureBox).BeginInit();
             menuPanel.SuspendLayout();
+            historyPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // logoPanel
@@ -211,10 +224,97 @@
             // historyPanel
             // 
             historyPanel.BackColor = SystemColors.Control;
+            historyPanel.Controls.Add(label1);
+            historyPanel.Controls.Add(pictureBox4);
+            historyPanel.Controls.Add(pictureBox3);
+            historyPanel.Controls.Add(sealsLabel);
+            historyPanel.Controls.Add(sealsTextLabel);
+            historyPanel.Controls.Add(balanceLabel);
+            historyPanel.Controls.Add(balanceTextLabel);
+            historyPanel.Controls.Add(surnameNameLabel);
+            historyPanel.Controls.Add(pictureBox2);
             historyPanel.Location = new Point(0, 134);
             historyPanel.Name = "historyPanel";
             historyPanel.Size = new Size(955, 595);
             historyPanel.TabIndex = 2;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackgroundImage = Properties.Resources.seal_bonus;
+            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox3.Location = new Point(462, 244);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(45, 45);
+            pictureBox3.TabIndex = 8;
+            pictureBox3.TabStop = false;
+            // 
+            // sealsLabel
+            // 
+            sealsLabel.AutoSize = true;
+            sealsLabel.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            sealsLabel.ForeColor = Color.BlueViolet;
+            sealsLabel.Location = new Point(502, 252);
+            sealsLabel.Name = "sealsLabel";
+            sealsLabel.Size = new Size(47, 29);
+            sealsLabel.TabIndex = 7;
+            sealsLabel.Text = "25";
+            sealsLabel.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // sealsTextLabel
+            // 
+            sealsTextLabel.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            sealsTextLabel.ForeColor = Color.Black;
+            sealsTextLabel.Location = new Point(387, 255);
+            sealsTextLabel.Name = "sealsTextLabel";
+            sealsTextLabel.Size = new Size(78, 32);
+            sealsTextLabel.TabIndex = 6;
+            sealsTextLabel.Text = "Seal-ы: ";
+            sealsTextLabel.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // balanceLabel
+            // 
+            balanceLabel.AutoSize = true;
+            balanceLabel.Font = new Font("Verdana", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            balanceLabel.ForeColor = Color.ForestGreen;
+            balanceLabel.Location = new Point(462, 212);
+            balanceLabel.Name = "balanceLabel";
+            balanceLabel.Size = new Size(116, 25);
+            balanceLabel.TabIndex = 5;
+            balanceLabel.Text = "18 000 ₽";
+            balanceLabel.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // balanceTextLabel
+            // 
+            balanceTextLabel.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            balanceTextLabel.ForeColor = Color.Black;
+            balanceTextLabel.Location = new Point(387, 209);
+            balanceTextLabel.Name = "balanceTextLabel";
+            balanceTextLabel.Size = new Size(78, 32);
+            balanceTextLabel.TabIndex = 4;
+            balanceTextLabel.Text = "Баланс: ";
+            balanceTextLabel.TextAlign = ContentAlignment.MiddleLeft;
+            balanceTextLabel.Click += label1_Click_2;
+            // 
+            // surnameNameLabel
+            // 
+            surnameNameLabel.Font = new Font("Segoe UI", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            surnameNameLabel.ForeColor = Color.Indigo;
+            surnameNameLabel.Location = new Point(0, 150);
+            surnameNameLabel.Name = "surnameNameLabel";
+            surnameNameLabel.Size = new Size(955, 40);
+            surnameNameLabel.TabIndex = 3;
+            surnameNameLabel.Text = "Забеев Тимур";
+            surnameNameLabel.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.BackgroundImage = Properties.Resources.acetone_2025826_15739_824;
+            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox2.Location = new Point(410, 40);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(135, 90);
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
             // 
             // userMenuLabel
             // 
@@ -328,6 +428,26 @@
             ProfileLinkLabel.MouseEnter += ProfileLinkLabel_MouseEnter;
             ProfileLinkLabel.MouseLeave += ProfileLinkLabel_MouseLeave;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.BackgroundImage = Properties.Resources.card;
+            pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox4.Location = new Point(77, 308);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(379, 250);
+            pictureBox4.TabIndex = 9;
+            pictureBox4.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.Font = new Font("Tahoma", 36F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label1.ForeColor = Color.BlueViolet;
+            label1.Location = new Point(502, 334);
+            label1.Name = "label1";
+            label1.Size = new Size(295, 197);
+            label1.TabIndex = 10;
+            label1.Text = "Будущее в надёжных ластах!";
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -352,6 +472,11 @@
             ((System.ComponentModel.ISupportInitialize)logoPictureBox).EndInit();
             menuPanel.ResumeLayout(false);
             menuPanel.PerformLayout();
+            historyPanel.ResumeLayout(false);
+            historyPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -377,5 +502,14 @@
         private LinkLabel creditLinkLabel;
         private LinkLabel shopLinkLabel;
         private LinkLabel ProfileLinkLabel;
+        private PictureBox pictureBox2;
+        private Label surnameNameLabel;
+        private Label balanceTextLabel;
+        private Label balanceLabel;
+        private Label sealsTextLabel;
+        private Label sealsLabel;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
+        private Label label1;
     }
 }

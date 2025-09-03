@@ -7,6 +7,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using static SealBank.PasswordHelper;
 
 namespace SealBank.Logic
 {
@@ -136,7 +137,9 @@ namespace SealBank.Logic
 
             if (userAccount is null) return null;
 
-            if (userAccount.Password != password) return null;
+            var hash = ComputeHash(password, userAccount.Salt);
+
+            if (userAccount.PasswordHash != hash) return null;
 
             return userAccount;
         }

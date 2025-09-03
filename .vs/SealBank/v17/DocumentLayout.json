@@ -7,80 +7,72 @@
       "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:data\\users.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\models\\users\\userbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:models\\users\\userbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\ui\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:ui\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:ui\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\ui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:ui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\datasavers\\usersaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:datasavers\\usersaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\ui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:ui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|D:\\\u0421# Projects\\SealBank\\ui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:ui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\ui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:ui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\logic\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:logic\\validator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|D:\\\u0421# Projects\\SealBank\\ui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:ui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\ui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:ui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\ui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:ui\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\models\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:models\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\models\\transactions\\paymenttransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:models\\transactions\\paymenttransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\models\\users\\premiumuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:models\\users\\premiumuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\data\\bankbalance.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:data\\bankbalance.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\models\\users\\businessuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:models\\users\\businessuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\datasavers\\historysaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:datasavers\\historysaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\data\\history.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:data\\history.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\dataloaders\\userloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:dataloaders\\userloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\ui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:ui\\registerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\dataloaders\\historyloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:dataloaders\\historyloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\constants\\spendingcategorytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:constants\\spendingcategorytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\constants\\organizationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:constants\\organizationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\dataloaders\\banksettingsloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:dataloaders\\banksettingsloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\dataloaders\\userloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:dataloaders\\userloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\models\\transactions\\withdrawaltransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:models\\transactions\\withdrawaltransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\data\\history.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:data\\history.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\models\\transactions\\transfertransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,32 +91,12 @@
       "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:models\\transactions\\bonustransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\models\\users\\userbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:models\\users\\userbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\models\\users\\businessuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:models\\users\\businessuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\logic\\bonusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:logic\\bonusservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|D:\\\u0421# Projects\\SealBank\\ui\\transferform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:ui\\transferform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\models\\users\\premiumuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:models\\users\\premiumuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\constants\\organizationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:constants\\organizationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\constants\\spendingcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:constants\\spendingcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\constants\\spendingcategorynames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -141,10 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\datasavers\\banksettingssaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:datasavers\\banksettingssaver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\sealbank.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|solutionrelative:sealbank.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B92B4775-F4BD-D54F-0E8E-C340756BB4E2}|SealBank.csproj|d:\\\u0441# projects\\sealbank\\ui\\loginform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -166,42 +134,17 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAUwB4AAAANAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\User.cs",
+              "RelativeDocumentMoniker": "Models\\Users\\User.cs",
+              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\User.cs",
+              "RelativeToolTip": "Models\\Users\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T17:45:45.261Z",
+              "WhenOpened": "2025-09-03T09:06:49.894Z",
               "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserSaver.cs",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\DataSavers\\UserSaver.cs",
-              "RelativeDocumentMoniker": "DataSavers\\UserSaver.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\DataSavers\\UserSaver.cs",
-              "RelativeToolTip": "DataSavers\\UserSaver.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T15:18:46.19Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\UI\\MainForm.cs",
-              "RelativeDocumentMoniker": "UI\\MainForm.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\UI\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "UI\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T13:42:05.313Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Bookmark",
@@ -209,28 +152,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainForm.Designer.cs",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\UI\\MainForm.Designer.cs",
-              "RelativeDocumentMoniker": "UI\\MainForm.Designer.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\UI\\MainForm.Designer.cs",
-              "RelativeToolTip": "UI\\MainForm.Designer.cs",
-              "ViewState": "AgIAADYBAAAAAAAAAAAawEcBAABGAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\UI\\LoginForm.cs",
+              "RelativeDocumentMoniker": "UI\\LoginForm.cs",
+              "ToolTip": "D:\\\u0421# Projects\\SealBank\\UI\\LoginForm.cs",
+              "RelativeToolTip": "UI\\LoginForm.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAiwI0AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-26T11:17:37.926Z",
+              "WhenOpened": "2025-09-03T09:08:52.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\UI\\MainForm.cs",
-              "RelativeDocumentMoniker": "UI\\MainForm.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\UI\\MainForm.cs",
-              "RelativeToolTip": "UI\\MainForm.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAmwHcAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\UI\\LoginForm.cs",
+              "RelativeDocumentMoniker": "UI\\LoginForm.cs",
+              "ToolTip": "D:\\\u0421# Projects\\SealBank\\UI\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "UI\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T15:40:55.655Z",
+              "WhenOpened": "2025-09-03T09:08:47.852Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PasswordHelper.cs",
+              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\PasswordHelper.cs",
+              "RelativeDocumentMoniker": "PasswordHelper.cs",
+              "ToolTip": "D:\\\u0421# Projects\\SealBank\\PasswordHelper.cs",
+              "RelativeToolTip": "PasswordHelper.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T08:47:12.11Z",
               "EditorCaption": ""
             },
             {
@@ -241,9 +196,22 @@
               "RelativeDocumentMoniker": "UI\\RegisterForm.cs",
               "ToolTip": "D:\\\u0421# Projects\\SealBank\\UI\\RegisterForm.cs",
               "RelativeToolTip": "UI\\RegisterForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAAAIsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T11:07:16.338Z",
+              "WhenOpened": "2025-09-03T08:20:27.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Validator.cs",
+              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Logic\\Validator.cs",
+              "RelativeDocumentMoniker": "Logic\\Validator.cs",
+              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Logic\\Validator.cs",
+              "RelativeToolTip": "Logic\\Validator.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAAwIsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T08:56:28.429Z",
               "EditorCaption": ""
             },
             {
@@ -254,133 +222,77 @@
               "RelativeDocumentMoniker": "Data\\users.json",
               "ToolTip": "D:\\\u0421# Projects\\SealBank\\Data\\users.json",
               "RelativeToolTip": "Data\\users.json",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAAHAAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-13T13:51:12.809Z",
+              "WhenOpened": "2025-09-02T18:16:40.491Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\UI\\LoginForm.cs",
-              "RelativeDocumentMoniker": "UI\\LoginForm.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\UI\\LoginForm.cs",
-              "RelativeToolTip": "UI\\LoginForm.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAawCkAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "UserBase.cs",
+              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\UserBase.cs",
+              "RelativeDocumentMoniker": "Models\\Users\\UserBase.cs",
+              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\UserBase.cs",
+              "RelativeToolTip": "Models\\Users\\UserBase.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAywD4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T11:28:46.081Z",
+              "WhenOpened": "2025-09-02T18:23:59.467Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "PremiumUser.cs",
+              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\PremiumUser.cs",
+              "RelativeDocumentMoniker": "Models\\Users\\PremiumUser.cs",
+              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\PremiumUser.cs",
+              "RelativeToolTip": "Models\\Users\\PremiumUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T09:06:41.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BusinessUser.cs",
+              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\BusinessUser.cs",
+              "RelativeDocumentMoniker": "Models\\Users\\BusinessUser.cs",
+              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\BusinessUser.cs",
+              "RelativeToolTip": "Models\\Users\\BusinessUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-03T09:06:10.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\UI\\RegisterForm.cs",
               "RelativeDocumentMoniker": "UI\\RegisterForm.cs",
               "ToolTip": "D:\\\u0421# Projects\\SealBank\\UI\\RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "UI\\RegisterForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-25T11:07:12.339Z"
+              "WhenOpened": "2025-09-03T08:19:52.91Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Validator.cs",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Logic\\Validator.cs",
-              "RelativeDocumentMoniker": "Logic\\Validator.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Logic\\Validator.cs",
-              "RelativeToolTip": "Logic\\Validator.cs",
-              "ViewState": "AgIAAMIAAAAAAAAAAAAAwNkAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T20:29:55.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\UI\\LoginForm.cs",
-              "RelativeDocumentMoniker": "UI\\LoginForm.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\UI\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "UI\\LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T20:41:24.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\User.cs",
-              "RelativeDocumentMoniker": "Models\\Users\\User.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\User.cs",
-              "RelativeToolTip": "Models\\Users\\User.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T17:08:42.037Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PaymentTransaction.cs",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Models\\Transactions\\PaymentTransaction.cs",
-              "RelativeDocumentMoniker": "Models\\Transactions\\PaymentTransaction.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Models\\Transactions\\PaymentTransaction.cs",
-              "RelativeToolTip": "Models\\Transactions\\PaymentTransaction.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T08:42:10.236Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "bankBalance.json",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Data\\bankBalance.json",
-              "RelativeDocumentMoniker": "Data\\bankBalance.json",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Data\\bankBalance.json",
-              "RelativeToolTip": "Data\\bankBalance.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-04T17:13:38.694Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "UserLoader.cs",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\DataLoaders\\UserLoader.cs",
               "RelativeDocumentMoniker": "DataLoaders\\UserLoader.cs",
               "ToolTip": "D:\\\u0421# Projects\\SealBank\\DataLoaders\\UserLoader.cs",
               "RelativeToolTip": "DataLoaders\\UserLoader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T16:29:54.982Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "history.json",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Data\\history.json",
-              "RelativeDocumentMoniker": "Data\\history.json",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Data\\history.json",
-              "RelativeToolTip": "Data\\history.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-07-29T08:39:42.893Z"
+              "WhenOpened": "2025-09-02T18:17:09.454Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "HistorySaver.cs",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\DataSavers\\HistorySaver.cs",
-              "RelativeDocumentMoniker": "DataSavers\\HistorySaver.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\DataSavers\\HistorySaver.cs",
-              "RelativeToolTip": "DataSavers\\HistorySaver.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T16:40:24.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
               "Title": "BankSettingsLoader.cs",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\DataLoaders\\BankSettingsLoader.cs",
               "RelativeDocumentMoniker": "DataLoaders\\BankSettingsLoader.cs",
@@ -392,19 +304,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 11,
               "Title": "HistoryLoader.cs",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\DataLoaders\\HistoryLoader.cs",
               "RelativeDocumentMoniker": "DataLoaders\\HistoryLoader.cs",
               "ToolTip": "D:\\\u0421# Projects\\SealBank\\DataLoaders\\HistoryLoader.cs",
               "RelativeToolTip": "DataLoaders\\HistoryLoader.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA1wCcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T19:04:23.593Z"
+              "WhenOpened": "2025-08-21T19:04:23.593Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 12,
+              "Title": "SpendingCategoryType.cs",
+              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Constants\\SpendingCategoryType.cs",
+              "RelativeDocumentMoniker": "Constants\\SpendingCategoryType.cs",
+              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Constants\\SpendingCategoryType.cs",
+              "RelativeToolTip": "Constants\\SpendingCategoryType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T14:52:47.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OrganizationType.cs",
+              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Constants\\OrganizationType.cs",
+              "RelativeDocumentMoniker": "Constants\\OrganizationType.cs",
+              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Constants\\OrganizationType.cs",
+              "RelativeToolTip": "Constants\\OrganizationType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T15:04:16.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "WithdrawalTransaction.cs",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Models\\Transactions\\WithdrawalTransaction.cs",
               "RelativeDocumentMoniker": "Models\\Transactions\\WithdrawalTransaction.cs",
@@ -416,7 +355,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 17,
+              "Title": "history.json",
+              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Data\\history.json",
+              "RelativeDocumentMoniker": "Data\\history.json",
+              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Data\\history.json",
+              "RelativeToolTip": "Data\\history.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-29T08:39:42.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "TransferTransaction.cs",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Models\\Transactions\\TransferTransaction.cs",
               "RelativeDocumentMoniker": "Models\\Transactions\\TransferTransaction.cs",
@@ -428,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "TransactionBase.cs",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Models\\Transactions\\TransactionBase.cs",
               "RelativeDocumentMoniker": "Models\\Transactions\\TransactionBase.cs",
@@ -440,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "DepositTransaction.cs",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Models\\Transactions\\DepositTransaction.cs",
               "RelativeDocumentMoniker": "Models\\Transactions\\DepositTransaction.cs",
@@ -452,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
               "Title": "BonusTransaction.cs",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Models\\Transactions\\BonusTransaction.cs",
               "RelativeDocumentMoniker": "Models\\Transactions\\BonusTransaction.cs",
@@ -464,31 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "UserBase.cs",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\UserBase.cs",
-              "RelativeDocumentMoniker": "Models\\Users\\UserBase.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\UserBase.cs",
-              "RelativeToolTip": "Models\\Users\\UserBase.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-04T14:18:37.592Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "BusinessUser.cs",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\BusinessUser.cs",
-              "RelativeDocumentMoniker": "Models\\Users\\BusinessUser.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\BusinessUser.cs",
-              "RelativeToolTip": "Models\\Users\\BusinessUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T17:40:09.588Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 22,
               "Title": "BonusService.cs",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Logic\\BonusService.cs",
               "RelativeDocumentMoniker": "Logic\\BonusService.cs",
@@ -500,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 23,
               "Title": "TransferForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\UI\\TransferForm.cs",
               "RelativeDocumentMoniker": "UI\\TransferForm.cs",
@@ -511,31 +438,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "PremiumUser.cs",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\PremiumUser.cs",
-              "RelativeDocumentMoniker": "Models\\Users\\PremiumUser.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Models\\Users\\PremiumUser.cs",
-              "RelativeToolTip": "Models\\Users\\PremiumUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T07:36:46.321Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "OrganizationType.cs",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Constants\\OrganizationType.cs",
-              "RelativeDocumentMoniker": "Constants\\OrganizationType.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Constants\\OrganizationType.cs",
-              "RelativeToolTip": "Constants\\OrganizationType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T15:04:16.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 24,
               "Title": "SpendingCategoryNames.cs",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Constants\\SpendingCategoryNames.cs",
               "RelativeDocumentMoniker": "Constants\\SpendingCategoryNames.cs",
@@ -547,19 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "SpendingCategory.cs",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Constants\\SpendingCategory.cs",
-              "RelativeDocumentMoniker": "Constants\\SpendingCategory.cs",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\Constants\\SpendingCategory.cs",
-              "RelativeToolTip": "Constants\\SpendingCategory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T14:52:47.149Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 25,
               "Title": "IBonusReceivable.cs",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Interfaces\\IBonusReceivable.cs",
               "RelativeDocumentMoniker": "Interfaces\\IBonusReceivable.cs",
@@ -571,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 26,
               "Title": "BankManagement.cs",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Managers\\BankManagement.cs",
               "RelativeDocumentMoniker": "Managers\\BankManagement.cs",
@@ -583,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 27,
               "Title": "BankSettingsSaver.cs",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\DataSavers\\BankSettingsSaver.cs",
               "RelativeDocumentMoniker": "DataSavers\\BankSettingsSaver.cs",
@@ -595,19 +486,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "SealBank.csproj",
-              "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\SealBank.csproj",
-              "RelativeDocumentMoniker": "SealBank.csproj",
-              "ToolTip": "D:\\\u0421# Projects\\SealBank\\SealBank.csproj",
-              "RelativeToolTip": "SealBank.csproj",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-29T08:04:22.393Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 28,
               "Title": "LoginForm.Designer.cs",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\UI\\LoginForm.Designer.cs",
               "RelativeDocumentMoniker": "UI\\LoginForm.Designer.cs",
@@ -615,11 +494,12 @@
               "RelativeToolTip": "UI\\LoginForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T18:31:28.854Z"
+              "WhenOpened": "2025-07-26T18:31:28.854Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 29,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\\u0421# Projects\\SealBank\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",

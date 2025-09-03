@@ -8,19 +8,19 @@ namespace SealBank.Constants
 {
     public static class SpendingCategoryNames
     {
-        public static readonly Dictionary<SpendingCategory, string> DisplayNames = new()
+        public static readonly Dictionary<SpendingCategoryType, string> DisplayNames = new()
         {
-            { SpendingCategory.Recreations, "Развлечения" },
-            { SpendingCategory.Restaurants, "Рестораны" },
-            { SpendingCategory.Transport, "Транспорт" },
-            { SpendingCategory.Education, "Образование" },
-            { SpendingCategory.Sport, "Спорт" },
-            { SpendingCategory.Culture, "Культура" },
-            { SpendingCategory.Travellings, "Путешествия" },
-            { SpendingCategory.PetSupplies, "Зоотовары" },
-            { SpendingCategory.ClothesAndShoes, "Одежда и обувь" },
-            { SpendingCategory.HospitalsAndPharmacies, "Больницы и аптеки" },
-            { SpendingCategory.BeautySalons, "Салоны красоты" }
+            { SpendingCategoryType.Recreations, "Развлечения" },
+            { SpendingCategoryType.Restaurants, "Рестораны" },
+            { SpendingCategoryType.Transport, "Транспорт" },
+            { SpendingCategoryType.Education, "Образование" },
+            { SpendingCategoryType.Sport, "Спорт" },
+            { SpendingCategoryType.Culture, "Культура" },
+            { SpendingCategoryType.Travellings, "Путешествия" },
+            { SpendingCategoryType.PetSupplies, "Зоотовары" },
+            { SpendingCategoryType.ClothesAndShoes, "Одежда и обувь" },
+            { SpendingCategoryType.HospitalsAndPharmacies, "Больницы и аптеки" },
+            { SpendingCategoryType.BeautySalons, "Салоны красоты" }
         };
     }
 }

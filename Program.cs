@@ -1,11 +1,11 @@
-using SealBank.UI;
 using SealBank.DataLoaders;
-using SealBank.Managers;
 using SealBank.DataSavers;
+using SealBank.Managers;
+using SealBank.UI;
 using System;
-using System.Windows.Forms;
+using System.Globalization;
 using System.Transactions;
-
+using System.Windows.Forms;
 
 namespace SealBank
 {
@@ -14,6 +14,9 @@ namespace SealBank
         [STAThread]
         static void Main()
         {
+            Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.InvariantCulture;
+
             var bankBalance = BankSettingsLoader.LoadBalance("Data/bankBalance.json");
             var users = UserLoader.LoadUsers("Data/users.json");
             var history = HistoryLoader.LoadHistory("Data/history.json");

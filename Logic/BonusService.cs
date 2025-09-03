@@ -11,19 +11,19 @@ namespace SealBank.Logic
 {
     public static class BonusService
     {
-        private static readonly Dictionary<SpendingCategory, int> CategoryBonuses = new()
+        private static readonly Dictionary<SpendingCategoryType, int> CategoryBonuses = new()
         {
-            {SpendingCategory.Recreations,  4},
-            {SpendingCategory.Restaurants, 3},
-            {SpendingCategory.Transport,  8},
-            {SpendingCategory.Education,  6},
-            {SpendingCategory.Sport,  5},
-            {SpendingCategory.Culture,  5},
-            {SpendingCategory.Travellings,  3},
-            {SpendingCategory.PetSupplies,  5},
-            {SpendingCategory.ClothesAndShoes,  4},
-            {SpendingCategory.HospitalsAndPharmacies,  7},
-            {SpendingCategory.BeautySalons,  4},
+            {SpendingCategoryType.Recreations,  4},
+            {SpendingCategoryType.Restaurants, 3},
+            {SpendingCategoryType.Transport,  8},
+            {SpendingCategoryType.Education,  6},
+            {SpendingCategoryType.Sport,  5},
+            {SpendingCategoryType.Culture,  5},
+            {SpendingCategoryType.Travellings,  3},
+            {SpendingCategoryType.PetSupplies,  5},
+            {SpendingCategoryType.ClothesAndShoes,  4},
+            {SpendingCategoryType.HospitalsAndPharmacies,  7},
+            {SpendingCategoryType.BeautySalons,  4},
         };  
 
         private const int MinWasteForBonus = 100;
@@ -34,7 +34,7 @@ namespace SealBank.Logic
             return (int)Math.Floor(bonus);
         }
 
-        public static int GetCategoryBonusPercent(SpendingCategory category)
+        public static int GetCategoryBonusPercent(SpendingCategoryType category)
         {
             if (!CategoryBonuses.TryGetValue(category, out var bonus))
                 throw new ArgumentException($"Категории {category} не найдено!");
@@ -42,7 +42,7 @@ namespace SealBank.Logic
             return bonus;
         }
 
-        public static int? GetSealsQuantity(decimal wastedMoneyAmount, SpendingCategory category, IBonusReceivable user)
+        public static int? GetSealsQuantity(decimal wastedMoneyAmount, SpendingCategoryType category, IBonusReceivable user)
         {
             if (wastedMoneyAmount < MinWasteForBonus) 
                 return 0;

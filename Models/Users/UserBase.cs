@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using static SealBank.PasswordHelper;
 
 namespace SealBank.Models.Users
 {
@@ -16,23 +17,28 @@ namespace SealBank.Models.Users
             string gender,
             DateTime birthDay,
             string email,
-            string password,
-            string phoneNumber
+            string passwordHash,
+            string salt,
+            string phoneNumber,
+            int userTypeId,
+            decimal balance,
+            List<TransactionBase> history
         )
     {
         public Guid Id { get; } = Guid.NewGuid();
         public string Name { get; } = name;
         public string Surname { get; } = surname;
         public string Email { get; private set; } = email;
-        public string Password { get; private set; } = password;
+        public string PasswordHash { get; private set; } = passwordHash;
+        public string Salt { get; private set; } = salt;
         public string Gender { get; } = gender;
         public DateTime BirthDay { get; } = birthDay;
         public int Age => DateTime.Today.Year - BirthDay.Year -
                   (DateTime.Today.DayOfYear < BirthDay.DayOfYear ? 1 : 0);
         public string PhoneNumber { get; private set; } = phoneNumber;
-        public int UserTypeId { get; private set; } = 0;
-        public decimal Balance { get; private set; } = 0;
-        public List<TransactionBase> History { get; private set; } = [];
+        public int UserTypeId { get; private set; } = userTypeId;
+        public decimal Balance { get; private set; } = balance;
+        public List<TransactionBase> History { get; private set; } = history;
 
         public void GiveMoney(decimal amount)
         {
@@ -49,7 +55,12 @@ namespace SealBank.Models.Users
         }
 
         public void ChangeEmail(string newEmail) => Email = newEmail;
-        public void ChangePassword(string newPassword) => Password = newPassword;
+        public void ChangePassword(string newPassword) 
+        {
+            var (newPasswordHash, newSalt) = HashPassword(newPassword);
+            PasswordHash = newPasswordHash;
+            Salt = newSalt;
+        } 
 
         public TransferTransaction Transfer(UserBase addressee, decimal amount)
         {

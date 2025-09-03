@@ -4,142 +4,21 @@
     {
       "$type": "SealBank.Models.Users.User, SealBank",
       "SpendingCategories": {
-        "$type": "System.Collections.Generic.List`1[[SealBank.Constants.SpendingCategory, SealBank]], System.Private.CoreLib",
-        "$values": [
-          0,
-          3,
-          4
-        ]
-      },
-      "BasicBonusPercent": 1,
-      "Seals": 0,
-      "Id": "3c29e310-9717-4b72-af61-da3cc8345867",
-      "Name": "Михаил",
-      "Surname": "Игнатов",
-      "Email": "maks_ignatov@mail.ru",
-      "Password": "abcde99999",
-      "Gender": "Мужской",
-      "BirthDay": "1990-05-14T00:00:00",
-      "Age": 35,
-      "PhoneNumber": "+79490026581",
-      "UserTypeId": 0,
-      "Balance": 0.0,
-      "History": {
-        "$type": "System.Collections.Generic.List`1[[SealBank.Models.Transactions.TransactionBase, SealBank]], System.Private.CoreLib",
-        "$values": []
-      }
-    },
-    {
-      "$type": "SealBank.Models.Users.PremiumUser, SealBank",
-      "SpendingCategories": {
-        "$type": "System.Collections.Generic.List`1[[SealBank.Constants.SpendingCategory, SealBank]], System.Private.CoreLib",
-        "$values": [
-          1,
-          3,
-          7
-        ]
-      },
-      "BasicBonusPercent": 2,
-      "Seals": 0,
-      "Id": "2d91b735-2678-428b-9bfd-a676f7bdced7",
-      "Name": "Алина",
-      "Surname": "Петрова",
-      "Email": "alinochka1999@mail.ru",
-      "Password": "F8MLefKNEulH31e5",
-      "Gender": "Женский",
-      "BirthDay": "1999-12-02T00:00:00",
-      "Age": 25,
-      "PhoneNumber": "+79495747884",
-      "UserTypeId": 0,
-      "Balance": 0.0,
-      "History": {
-        "$type": "System.Collections.Generic.List`1[[SealBank.Models.Transactions.TransactionBase, SealBank]], System.Private.CoreLib",
-        "$values": []
-      }
-    },
-    {
-      "$type": "SealBank.Models.Users.BusinessUser, SealBank",
-      "Id": "f49ef3ce-9323-4484-bb84-f332788ab489",
-      "Name": "Григорий",
-      "Surname": "Аверин",
-      "Email": "averin_grisha@mail.ru",
-      "Password": "g7q4ssxXXn4taK",
-      "Gender": "Мужской",
-      "BirthDay": "1985-09-23T00:00:00",
-      "Age": 39,
-      "PhoneNumber": "+79499274511",
-      "UserTypeId": 0,
-      "Balance": 0.0,
-      "History": {
-        "$type": "System.Collections.Generic.List`1[[SealBank.Models.Transactions.TransactionBase, SealBank]], System.Private.CoreLib",
-        "$values": []
-      }
-    },
-    {
-      "$type": "SealBank.Models.Users.User, SealBank",
-      "SpendingCategories": {
-        "$type": "System.Collections.Generic.List`1[[SealBank.Constants.SpendingCategory, SealBank]], System.Private.CoreLib",
+        "$type": "System.Collections.Generic.List`1[[SealBank.Constants.SpendingCategoryType, SealBank]], System.Private.CoreLib",
         "$values": []
       },
       "BasicBonusPercent": 1,
       "Seals": 0,
-      "Id": "153fb36e-adec-4bac-895c-507068288831",
-      "Name": "Мария",
-      "Surname": "Коробова",
-      "Email": "korobovamasha@mail.ru",
-      "Password": "55555555",
-      "Gender": "Женский",
-      "BirthDay": "2001-11-23T00:00:00",
-      "Age": 23,
-      "PhoneNumber": "+79494662089",
-      "UserTypeId": 0,
-      "Balance": 0.0,
-      "History": {
-        "$type": "System.Collections.Generic.List`1[[SealBank.Models.Transactions.TransactionBase, SealBank]], System.Private.CoreLib",
-        "$values": []
-      }
-    },
-    {
-      "$type": "SealBank.Models.Users.User, SealBank",
-      "SpendingCategories": {
-        "$type": "System.Collections.Generic.List`1[[SealBank.Constants.SpendingCategory, SealBank]], System.Private.CoreLib",
-        "$values": []
-      },
-      "BasicBonusPercent": 1,
-      "Seals": 0,
-      "Id": "bc1e0279-6e3e-4d52-907e-22ecdd006428",
-      "Name": "Тимур",
-      "Surname": "Забеев",
-      "Email": "zabeevtim22@gmail.com",
-      "Password": "22222222",
+      "Id": "cadf3593-466c-4815-a78f-43f0ee2c03aa",
+      "Name": "Иван",
+      "Surname": "Иванов",
+      "Email": "ivanov29@mail.ru",
+      "PasswordHash": "CBbloQJwWnKQq8HR6jSOunuvopluCov6osxBGh23XLo=",
+      "Salt": "5JHYEhm6Yw845hjxrlktKQ==",
       "Gender": "Мужской",
-      "BirthDay": "2004-09-14T00:00:00",
-      "Age": 20,
-      "PhoneNumber": "+79493781432",
-      "UserTypeId": 0,
-      "Balance": 0.0,
-      "History": {
-        "$type": "System.Collections.Generic.List`1[[SealBank.Models.Transactions.TransactionBase, SealBank]], System.Private.CoreLib",
-        "$values": []
-      }
-    },
-    {
-      "$type": "SealBank.Models.Users.User, SealBank",
-      "SpendingCategories": {
-        "$type": "System.Collections.Generic.List`1[[SealBank.Constants.SpendingCategory, SealBank]], System.Private.CoreLib",
-        "$values": []
-      },
-      "BasicBonusPercent": 1,
-      "Seals": 0,
-      "Id": "599c34d4-f87f-48c7-b4b9-08134013be40",
-      "Name": "Антон",
-      "Surname": "Алексеев",
-      "Email": "alexeevan31@mail.ru",
-      "Password": "ghjklasq",
-      "Gender": "Мужской",
-      "BirthDay": "2004-12-31T00:00:00",
-      "Age": 20,
-      "PhoneNumber": "+79178522632",
+      "BirthDay": "2005-12-29T00:00:00",
+      "Age": 19,
+      "PhoneNumber": "+79492558603",
       "UserTypeId": 0,
       "Balance": 0.0,
       "History": {

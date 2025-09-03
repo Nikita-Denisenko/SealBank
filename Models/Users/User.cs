@@ -18,23 +18,28 @@ namespace SealBank.Models.Users
         string gender,
         DateTime birthDay,
         string email,
-        string password,
-        string phoneNumber
+        string passwordHash,
+        string salt,
+        string phoneNumber,
+        int userTypeId,
+        decimal balance,
+        List<TransactionBase> history,
+        int seals
     )   : UserBase
         (
             name, surname, gender, birthDay, 
-            email, password, phoneNumber
+            email, passwordHash, salt, phoneNumber, userTypeId, balance, history
         ),
         IBonusReceivable
     {
-        public List<SpendingCategory> SpendingCategories { get; private set; } = [];
+        public List<SpendingCategoryType> SpendingCategories { get; private set; } = [];
         public int BasicBonusPercent { get; } = 1;
 
-        public int Seals { get; private set; } = 0;
+        public int Seals { get; private set; } = seals;
 
-        public List<SpendingCategory> ChooseCategories()
+        public List<SpendingCategoryType> ChooseCategories()
         {
-            return new List<SpendingCategory>();
+            return new List<SpendingCategoryType>();
         }
 
         public void AddSealBonus(int amount)
