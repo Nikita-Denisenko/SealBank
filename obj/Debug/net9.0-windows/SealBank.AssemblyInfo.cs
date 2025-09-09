@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SealBank")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d5247dfd44bc6e96821c34ab9e4bb0bd209d8f2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d8d06151977337b46fd034e0ce4bea8e38dc220")]
 [assembly: System.Reflection.AssemblyProductAttribute("SealBank")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SealBank")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

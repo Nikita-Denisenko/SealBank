@@ -21,7 +21,7 @@ namespace SealBank
             var users = UserLoader.LoadUsers("Data/users.json");
             var history = HistoryLoader.LoadHistory("Data/history.json");
 
-            var bank = new BankManagement(bankBalance, users, history);
+            var bank = new BankManager(bankBalance, users, history);
 
             ApplicationConfiguration.Initialize();
 

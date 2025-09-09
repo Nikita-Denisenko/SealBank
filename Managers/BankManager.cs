@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SealBank.Managers
 {
-    public class BankManagement
+    public class BankManager
     (
         decimal bankBalance,
         List<UserBase> users,

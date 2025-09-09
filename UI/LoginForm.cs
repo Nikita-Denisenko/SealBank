@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D;
-using static SealBank.Logic.Validator;
+using static SealBank.Logic.ValidatorService;
 
 using SealBank.Managers;
 
@@ -18,16 +18,15 @@ namespace SealBank.UI
     {
         private Panel mainPanel;
         private readonly Size baseSize = new Size(800, 600);
-        private readonly BankManagement Bank;
+        private readonly BankManager Bank;
 
-        public LoginForm(BankManagement bankManagement) 
+        public LoginForm(BankManager bankManagement) 
         {
             InitializeComponent();
             this.Bank = bankManagement;
             this.Size = new Size(1920, 1080);
             this.StartPosition = FormStartPosition.CenterScreen;
             this.WindowState = FormWindowState.Maximized;
-            this.StartPosition = FormStartPosition.CenterScreen;
             this.MinimumSize = new Size(800, 600);
 
             mainPanel = new Panel();

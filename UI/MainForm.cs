@@ -16,20 +16,28 @@ namespace SealBank.UI
 {
     public partial class MainForm : Form
     {
-        private readonly BankManagement Bank;
+        private Panel mainPanel;
+        private readonly Size baseSize = new Size(800, 600);
+        private readonly BankManager Bank;
 
-        public MainForm(BankManagement bankManagement)
+        public MainForm(BankManager bankManagement)
         {
             InitializeComponent();
-            this.Size = new Size(900, 630);
+            this.Size = new Size(1920, 1080);
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.WindowState = FormWindowState.Maximized;
             this.MinimumSize = new Size(800, 600);
-            this.StartPosition = FormStartPosition.CenterScreen;
             var user = bankManagement.CurrentUser;
             userNameLabel.Text = user.Name;
             userSurnameLabel.Text = user.Surname;
             surnameNameLabel.Text = $"{userSurnameLabel.Text} {userNameLabel.Text}";
             balanceLabel.Text = $"{user.Balance} ₽";
+
+            mainPanel = new Panel();
+            mainPanel.Size = baseSize;
+            mainPanel.BackColor = this.BackColor;
+            this.Controls.Add(mainPanel);
+
             if (user is IBonusReceivable bonusUser)
             {
                 sealsLabel.Text = bonusUser.Seals.ToString();

@@ -11,7 +11,7 @@ using static SealBank.PasswordHelper;
 
 namespace SealBank.Logic
 {
-    public static class Validator
+    public static class ValidatorService
     {
         public static void IsValidName(string name, out bool IsValid, out string? Message)
         {

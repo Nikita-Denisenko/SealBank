@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using static SealBank.Logic.Validator;
+using static SealBank.Logic.ValidatorService;
 using static SealBank.PasswordHelper;
 
 namespace SealBank.UI
@@ -16,9 +16,9 @@ namespace SealBank.UI
     {
         private Panel mainPanel;
         private readonly Size baseSize = new Size(800, 600);
-        private readonly BankManagement Bank;
+        private readonly BankManager Bank;
 
-        public RegisterForm(BankManagement bankManagement)
+        public RegisterForm(BankManager bankManagement)
         {
             InitializeComponent();
             this.Bank = bankManagement;
@@ -129,11 +129,12 @@ namespace SealBank.UI
 
 
             var (passwordHash, salt) = HashPassword(password);
-            var id = Bank.Users.Count + 1;
+            var id = new Guid();
+            var userType = UserType.User;
 
 
             var user = new User
-                (name, surname, gender, birthday, email, passwordHash, salt, phoneNumber, 0, 0, [], 0);
+                (id, name, surname, gender, birthday, email, passwordHash, salt, phoneNumber, userType, 0, [], 0);
 
             Bank.AddUser(user);
             Bank.SetCurrentUser(user);

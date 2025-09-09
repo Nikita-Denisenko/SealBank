@@ -1,17 +1,19 @@
 ﻿using SealBank.Constants;
+using SealBank.Interfaces;
 using SealBank.Models.Transactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using static SealBank.PasswordHelper;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace SealBank.Models.Users
 {
     public abstract class UserBase
         (
+            Guid id,
             string name,
             string surname,
             string gender,
@@ -20,12 +22,12 @@ namespace SealBank.Models.Users
             string passwordHash,
             string salt,
             string phoneNumber,
-            int userTypeId,
+            UserType userType,
             decimal balance,
             List<TransactionBase> history
-        )
+        ) : ITransferable
     {
-        public Guid Id { get; } = Guid.NewGuid();
+        public Guid Id { get; } = id;
         public string Name { get; } = name;
         public string Surname { get; } = surname;
         public string Email { get; private set; } = email;
@@ -36,7 +38,7 @@ namespace SealBank.Models.Users
         public int Age => DateTime.Today.Year - BirthDay.Year -
                   (DateTime.Today.DayOfYear < BirthDay.DayOfYear ? 1 : 0);
         public string PhoneNumber { get; private set; } = phoneNumber;
-        public int UserTypeId { get; private set; } = userTypeId;
+        public UserType UserType { get; private set; } = userType;
         public decimal Balance { get; private set; } = balance;
         public List<TransactionBase> History { get; private set; } = history;
 
@@ -61,30 +63,5 @@ namespace SealBank.Models.Users
             PasswordHash = newPasswordHash;
             Salt = newSalt;
         } 
-
-        public TransferTransaction Transfer(UserBase addressee, decimal amount)
-        {
-            if (addressee == null)
-                throw new ArgumentNullException(nameof(addressee));
-
-            if (amount <= 0)
-                throw new ArgumentOutOfRangeException(nameof(amount), "Amount must be greater than zero.");
-
-            if (!WithdrawMoney(amount))
-                throw new InvalidOperationException("Insufficient funds.");
-
-            addressee.GiveMoney(amount);
-
-            return new TransferTransaction(
-              "Перевод",
-              DateTime.Now,
-              Id,
-              Name,
-              $"{Name} перевёл {amount}₽ пользователю {addressee}.",
-              amount,
-              addressee.Id,
-              addressee.Name
-            );
-        }
     }
 }

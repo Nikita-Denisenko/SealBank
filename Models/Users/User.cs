@@ -1,18 +1,13 @@
 ﻿using SealBank.Constants;
 using SealBank.Interfaces;
 using SealBank.Models.Transactions;
-using System;
-using System.CodeDom;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace SealBank.Models.Users
 {
     public class User
     (
+        Guid id,
         string name,
         string surname,
         string gender,
@@ -21,14 +16,14 @@ namespace SealBank.Models.Users
         string passwordHash,
         string salt,
         string phoneNumber,
-        int userTypeId,
+        UserType userType,
         decimal balance,
         List<TransactionBase> history,
         int seals
     )   : UserBase
         (
-            name, surname, gender, birthDay, 
-            email, passwordHash, salt, phoneNumber, userTypeId, balance, history
+            id, name, surname, gender, birthDay, 
+            email, passwordHash, salt, phoneNumber, userType, balance, history
         ),
         IBonusReceivable
     {

@@ -11,6 +11,7 @@ namespace SealBank.Models.Users
 {
     public class PremiumUser 
     (
+        Guid id,
         string name,
         string surname,
         string gender,
@@ -19,13 +20,13 @@ namespace SealBank.Models.Users
         string passwordHash,
         string salt,
         string phoneNumber,
-        int userTypeId,
+        UserType userType,
         decimal balance,
         List<TransactionBase> history
     )   : UserBase
         (
-            name, surname, gender, birthDay, 
-            email, passwordHash, salt, phoneNumber, userTypeId, balance, history
+            id, name, surname, gender, birthDay, 
+            email, passwordHash, salt, phoneNumber, userType, balance, history
         ),
         IBonusReceivable
 

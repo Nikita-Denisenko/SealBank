@@ -40,6 +40,8 @@
             transfersLinkLabel = new LinkLabel();
             mainLinkLabel = new LinkLabel();
             historyPanel = new Panel();
+            label1 = new Label();
+            pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
             sealsLabel = new Label();
             sealsTextLabel = new Label();
@@ -54,16 +56,14 @@
             favouritesLinkLabel = new LinkLabel();
             creditLinkLabel = new LinkLabel();
             ProfileLinkLabel = new LinkLabel();
-            pictureBox4 = new PictureBox();
-            label1 = new Label();
             logoPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)logoPictureBox).BeginInit();
             menuPanel.SuspendLayout();
             historyPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // logoPanel
@@ -237,6 +237,26 @@
             historyPanel.Name = "historyPanel";
             historyPanel.Size = new Size(955, 595);
             historyPanel.TabIndex = 2;
+            // 
+            // label1
+            // 
+            label1.Font = new Font("Tahoma", 36F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label1.ForeColor = Color.BlueViolet;
+            label1.Location = new Point(502, 334);
+            label1.Name = "label1";
+            label1.Size = new Size(295, 197);
+            label1.TabIndex = 10;
+            label1.Text = "Будущее в надёжных ластах!";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackgroundImage = Properties.Resources.card;
+            pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
+            pictureBox4.Location = new Point(77, 308);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(379, 250);
+            pictureBox4.TabIndex = 9;
+            pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -428,26 +448,6 @@
             ProfileLinkLabel.MouseEnter += ProfileLinkLabel_MouseEnter;
             ProfileLinkLabel.MouseLeave += ProfileLinkLabel_MouseLeave;
             // 
-            // pictureBox4
-            // 
-            pictureBox4.BackgroundImage = Properties.Resources.card;
-            pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
-            pictureBox4.Location = new Point(77, 308);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(379, 250);
-            pictureBox4.TabIndex = 9;
-            pictureBox4.TabStop = false;
-            // 
-            // label1
-            // 
-            label1.Font = new Font("Tahoma", 36F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.ForeColor = Color.BlueViolet;
-            label1.Location = new Point(502, 334);
-            label1.Name = "label1";
-            label1.Size = new Size(295, 197);
-            label1.TabIndex = 10;
-            label1.Text = "Будущее в надёжных ластах!";
-            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -474,9 +474,9 @@
             menuPanel.PerformLayout();
             historyPanel.ResumeLayout(false);
             historyPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
