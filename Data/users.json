@@ -75,6 +75,31 @@
         "$type": "System.Collections.Generic.List`1[[SealBank.Models.Transactions.TransactionBase, SealBank]], System.Private.CoreLib",
         "$values": []
       }
+    },
+    {
+      "$type": "SealBank.Models.Users.User, SealBank",
+      "SpendingCategories": {
+        "$type": "System.Collections.Generic.List`1[[SealBank.Constants.SpendingCategoryType, SealBank]], System.Private.CoreLib",
+        "$values": []
+      },
+      "BasicBonusPercent": 1,
+      "Seals": 0,
+      "Id": "00000000-0000-0000-0000-000000000000",
+      "Name": "Никита",
+      "Surname": "Денисенко",
+      "Email": "nikitad@gmail.com",
+      "PasswordHash": "eD/EztrYbZQwYx1uvSFqQNZSSRzE2+qLCHdgqNdsvjw=",
+      "Salt": "7jn8tzl0KaAlyB9uunLJ1Q==",
+      "Gender": "Мужской",
+      "BirthDay": "2008-03-19T00:00:00",
+      "Age": 17,
+      "PhoneNumber": "+79490328654",
+      "UserType": 0,
+      "Balance": 0.0,
+      "History": {
+        "$type": "System.Collections.Generic.List`1[[SealBank.Models.Transactions.TransactionBase, SealBank]], System.Private.CoreLib",
+        "$values": []
+      }
     }
   ]
 }

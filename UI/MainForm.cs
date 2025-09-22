@@ -1,23 +1,11 @@
-﻿using SealBank.DataSavers;
-using SealBank.Interfaces;
-using SealBank.Managers;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
+﻿using SealBank.Managers;
+using SealBank.UI.Sections.HomeSection;
+
 
 namespace SealBank.UI
 {
     public partial class MainForm : Form
     {
-        private Panel mainPanel;
-        private readonly Size baseSize = new Size(800, 600);
         private readonly BankManager Bank;
 
         public MainForm(BankManager bankManagement)
@@ -27,73 +15,68 @@ namespace SealBank.UI
             this.StartPosition = FormStartPosition.CenterScreen;
             this.WindowState = FormWindowState.Maximized;
             this.MinimumSize = new Size(800, 600);
+
+            Bank = bankManagement;
+
             var user = bankManagement.CurrentUser;
             userNameLabel.Text = user.Name;
             userSurnameLabel.Text = user.Surname;
-            surnameNameLabel.Text = $"{userSurnameLabel.Text} {userNameLabel.Text}";
-            balanceLabel.Text = $"{user.Balance} ₽";
 
-            mainPanel = new Panel();
-            mainPanel.Size = baseSize;
-            mainPanel.BackColor = this.BackColor;
-            this.Controls.Add(mainPanel);
-
-            if (user is IBonusReceivable bonusUser)
-            {
-                sealsLabel.Text = bonusUser.Seals.ToString();
-            }
-            Bank = bankManagement;
-        }
-        private void MainForm_Load(object sender, EventArgs e)
-        {
-
+            // грузим профиль по умолчанию
+            LoadContent(new ProfilePage(Bank));
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void LoadContent(UserControl page)
         {
-
+            HomePagePanel.Controls.Clear();
+            page.Dock = DockStyle.Fill;
+            HomePagePanel.Controls.Add(page);
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
+        private void ProfileLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LoadContent(new ProfilePage(Bank));
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void historyLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            LoadContent(new HistoryPage());
         }
 
-        private void transfersLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void bonusesLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            LoadContent(new BonusesPage());
         }
 
-        private void linkLabel6_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void depositLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            LoadContent(new DepositsPage());
+        }
 
+        private void creditLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LoadContent(new CreditsPage());
+        }
+
+        private void favouritesLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LoadContent(new FavouritesPage());
         }
 
         private void mainLinkLabel_MouseEnter(object sender, EventArgs e)
         {
-            mainLinkLabel.LinkColor = Color.Magenta;
-
+            mainLinkLabel.LinkColor = Color.Gold;
         }
 
         private void mainLinkLabel_MouseLeave(object sender, EventArgs e)
         {
             mainLinkLabel.LinkColor = Color.White;
-
-        }
-
-        private void mainLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
         }
 
         private void transfersLinkLabel_MouseEnter(object sender, EventArgs e)
         {
-            transfersLinkLabel.LinkColor = Color.Magenta;
+            transfersLinkLabel.LinkColor = Color.Gold;
         }
 
         private void transfersLinkLabel_MouseLeave(object sender, EventArgs e)
@@ -103,7 +86,7 @@ namespace SealBank.UI
 
         private void cardsLinkLabel_MouseEnter(object sender, EventArgs e)
         {
-            cardsLinkLabel.LinkColor = Color.Magenta;
+            cardsLinkLabel.LinkColor = Color.Gold;
         }
 
         private void cardsLinkLabel_MouseLeave(object sender, EventArgs e)
@@ -111,14 +94,19 @@ namespace SealBank.UI
             cardsLinkLabel.LinkColor = Color.White;
         }
 
-        private void creditsLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void shopLinkLabel_MouseEnter(object sender, EventArgs e)
         {
+            shopLinkLabel.LinkColor = Color.Gold;
+        }
 
+        private void shopLinkLabel_MouseLeave(object sender, EventArgs e)
+        {
+            shopLinkLabel.LinkColor = Color.White;
         }
 
         private void otherLinkLabel_MouseEnter(object sender, EventArgs e)
         {
-            otherLinkLabel.LinkColor = Color.Magenta;
+            otherLinkLabel.LinkColor = Color.Gold;
         }
 
         private void otherLinkLabel_MouseLeave(object sender, EventArgs e)
@@ -126,9 +114,14 @@ namespace SealBank.UI
             otherLinkLabel.LinkColor = Color.White;
         }
 
-        private void userNamelabel_Click(object sender, EventArgs e)
+        private void ProfileLinkLabel_MouseEnter(object sender, EventArgs e)
         {
+            ProfileLinkLabel.LinkColor = Color.DarkSlateBlue;
+        }
 
+        private void ProfileLinkLabel_MouseLeave(object sender, EventArgs e)
+        {
+            ProfileLinkLabel.LinkColor = Color.Black;
         }
 
         private void historyLinkLabel_MouseEnter(object sender, EventArgs e)
@@ -151,16 +144,6 @@ namespace SealBank.UI
             bonusesLinkLabel.LinkColor = Color.Black;
         }
 
-        private void favouritesLinkLabel_MouseEnter(object sender, EventArgs e)
-        {
-            favouritesLinkLabel.LinkColor = Color.DarkSlateBlue;
-        }
-
-        private void favouritesLinkLabel_MouseLeave(object sender, EventArgs e)
-        {
-            favouritesLinkLabel.LinkColor = Color.Black;
-        }
-
         private void depositLinkLabel_MouseEnter(object sender, EventArgs e)
         {
             depositLinkLabel.LinkColor = Color.DarkSlateBlue;
@@ -181,34 +164,14 @@ namespace SealBank.UI
             creditLinkLabel.LinkColor = Color.Black;
         }
 
-        private void shopLinkLabel_MouseEnter(object sender, EventArgs e)
+        private void favouritesLinkLabel_MouseEnter(object sender, EventArgs e)
         {
-            shopLinkLabel.LinkColor = Color.Magenta;
+            favouritesLinkLabel.LinkColor = Color.DarkSlateBlue;
         }
 
-        private void shopLinkLabel_MouseLeave(object sender, EventArgs e)
+        private void favouritesLinkLabel_MouseLeave(object sender, EventArgs e)
         {
-            shopLinkLabel.LinkColor = Color.White;
-        }
-
-        private void userSurnameLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ProfileLinkLabel_MouseEnter(object sender, EventArgs e)
-        {
-            ProfileLinkLabel.LinkColor = Color.DarkSlateBlue;
-        }
-
-        private void ProfileLinkLabel_MouseLeave(object sender, EventArgs e)
-        {
-            ProfileLinkLabel.LinkColor = Color.Black;
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
+            favouritesLinkLabel.LinkColor = Color.Black;
         }
     }
 }

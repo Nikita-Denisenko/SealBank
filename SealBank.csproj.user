@@ -13,6 +13,24 @@
     <Compile Update="UI\RegisterForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UI\Sections\HomeSection\BonusesPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Sections\HomeSection\CreditsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Sections\HomeSection\DepositsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Sections\HomeSection\FavouritesPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Sections\HomeSection\HistoryPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="UI\Sections\HomeSection\ProfilePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="UI\TransferForm.cs">
       <SubType>Form</SubType>
     </Compile>
